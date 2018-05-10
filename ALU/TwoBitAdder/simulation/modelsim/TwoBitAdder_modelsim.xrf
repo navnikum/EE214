@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, /home/navnit1224/EEsem4/214/vhdl/TwoBitAdder.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/navnit1224/EEsem4/214/vhdl/TwoBitAdder/db/TwoBitAdder.cbx.xml
+design_name = TwoBitAdder
+instance = comp, \x0~I\, x0, TwoBitAdder, 1
+instance = comp, \y1~I\, y1, TwoBitAdder, 1
+instance = comp, \x1~I\, x1, TwoBitAdder, 1
+instance = comp, \y0~I\, y0, TwoBitAdder, 1
+instance = comp, \x_3|c~0\, x_3|c~0, TwoBitAdder, 1
+instance = comp, \x_1|c\, x_1|c, TwoBitAdder, 1
+instance = comp, \s1~I\, s1, TwoBitAdder, 1
+instance = comp, \s0~I\, s0, TwoBitAdder, 1

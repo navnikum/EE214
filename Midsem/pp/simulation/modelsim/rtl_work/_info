@@ -1,0 +1,244 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/Midsem/pp/simulation/modelsim
+Efa
+Z1 w1520662734
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FA.vhd
+Z5 F/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FA.vhd
+l0
+L5
+V5aGl@i`J]7_19522Tm54S2
+!s100 BOjXMEU>d:ZB:0Z4gO[Le0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1520681055
+!i10b 1
+Z8 !s108 1520681055.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FA.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FA.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehave2
+R2
+R3
+DEx4 work 2 fa 0 22 5aGl@i`J]7_19522Tm54S2
+l11
+L9
+VYKdfSJSK0cW`k[_1EL?Zc3
+!s100 ]TcPVP7H3<>glid1Rc9Do3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Efd
+Z13 w1520662736
+R2
+R3
+R0
+Z14 8/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FD.vhd
+Z15 F/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FD.vhd
+l0
+L6
+VbhX=j_>E4_DCAWO4iNZE=1
+!s100 ]ABe:?kRk@4eG[6VWA2_G1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FD.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FD.vhd|
+!i113 1
+R11
+R12
+Abehave3
+R2
+R3
+DEx4 work 2 fd 0 22 bhX=j_>E4_DCAWO4iNZE=1
+l12
+L10
+VHTVL?zoPGRDb`D@A=;ELj3
+!s100 JDoXT<07ol[Z`H?>9cGfT2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Efinal
+Z18 w1520663667
+R2
+R3
+R0
+Z19 8/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/final.vhd
+Z20 F/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/final.vhd
+l0
+L6
+VV^COda0Q9dYzSbd[3dGBJ1
+!s100 0hOGea=oVQVZ5NES_jmPV0
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/final.vhd|
+Z22 !s107 /home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/final.vhd|
+!i113 1
+R11
+R12
+Abehave4
+R2
+R3
+DEx4 work 5 final 0 22 V^COda0Q9dYzSbd[3dGBJ1
+l16
+L10
+Vz8MbI;>WGae5^j`bZb9N;0
+!s100 3TW;;ag=X8T4XbL[ESVnZ3
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Efsa
+Z23 w1520662815
+R2
+R3
+R0
+Z24 8/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FSA.vhd
+Z25 F/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FSA.vhd
+l0
+L6
+VEk`J]T`D5A_WP44QgK6J@1
+!s100 IATMmgQd>lF4eN7c@]<IZ0
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FSA.vhd|
+Z27 !s107 /home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/FSA.vhd|
+!i113 1
+R11
+R12
+Abehave1
+R2
+R3
+DEx4 work 3 fsa 0 22 Ek`J]T`D5A_WP44QgK6J@1
+l15
+L10
+V60<XGE`1o]Po;@VA:0`8b2
+!s100 1B^J[ASY0MSnUAomVz5`b2
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Eno_of
+Z28 w1520679389
+R2
+R3
+R0
+Z29 8/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/no_of.vhd
+Z30 F/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/no_of.vhd
+l0
+L7
+VaXbYHjTdM8K^C3<[f0jj[3
+!s100 o`aJB`lcb8J>e4KdIH;kI2
+R6
+31
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/no_of.vhd|
+Z32 !s107 /home/navnit1224/EEsem4/214/Midsem/16D070053_NavnitKumar/no_of.vhd|
+!i113 1
+R11
+R12
+Abehave6
+R2
+R3
+DEx4 work 5 no_of 0 22 aXbYHjTdM8K^C3<[f0jj[3
+l26
+L11
+VdcJ_gL82FVLSO?O_ndSUi2
+!s100 F89TXcVP80m_C8PF3UbAh0
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Etestbench
+Z33 w1520667455
+R3
+R2
+R0
+Z34 8/home/navnit1224/EEsem4/214/Midsem/pp/../16D070053_NavnitKumar/Testbench.vhd
+Z35 F/home/navnit1224/EEsem4/214/Midsem/pp/../16D070053_NavnitKumar/Testbench.vhd
+l0
+L10
+VTZ>kSmNE7mLGk6jA[BaBQ3
+!s100 h`<<f5Y0?55R4a`U0c<TP2
+R6
+31
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Midsem/pp/../16D070053_NavnitKumar/Testbench.vhd|
+Z37 !s107 /home/navnit1224/EEsem4/214/Midsem/pp/../16D070053_NavnitKumar/Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 TZ>kSmNE7mLGk6jA[BaBQ3
+l43
+L12
+VA;[jm1h;]gh]a;A^YQZj;3
+!s100 ]c4U=OJ`J3:JAYza@d>@`2
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12

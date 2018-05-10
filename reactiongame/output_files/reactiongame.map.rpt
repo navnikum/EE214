@@ -1,0 +1,522 @@
+Analysis & Synthesis report for reactiongame
+Thu Apr 19 14:11:30 2018
+Quartus Prime Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |reactiongame|lcd_controller:s7|state
+  9. User-Specified and Inferred Latches
+ 10. Registers Removed During Synthesis
+ 11. General Register Statistics
+ 12. Inverted Register Statistics
+ 13. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 14. Port Connectivity Checks: "looper:s5"
+ 15. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2016 Altera Corporation. All rights reserved.
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, the Altera Quartus Prime License Agreement,
+the Altera MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Altera and sold by Altera or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Thu Apr 19 14:11:30 2018       ;
+; Quartus Prime Version       ; 16.0.0 Build 211 04/27/2016 SJ Lite Edition ;
+; Revision Name               ; reactiongame                                ;
+; Top-level Entity Name       ; reactiongame                                ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 598                                         ;
+; Total pins                  ; 18                                          ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 5M1270ZT144C5      ;                    ;
+; Top-level entity name                                                      ; reactiongame       ; reactiongame       ;
+; Family name                                                                ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 4      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                 ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type       ; File Name with Absolute Path                          ; Library ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+; my_dff2.vhdl                     ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/my_dff2.vhdl       ;         ;
+; my_dff.vhdl                      ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/my_dff.vhdl        ;         ;
+; counter.vhd                      ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/counter.vhd        ;         ;
+; debouncer.vhd                    ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/debouncer.vhd      ;         ;
+; lcd_controller.vhd               ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/lcd_controller.vhd ;         ;
+; randgen.vhd                      ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/randgen.vhd        ;         ;
+; looper.vhd                       ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/looper.vhd         ;         ;
+; reactiongame.vhd                 ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd   ;         ;
+; slowclk.vhd                      ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/slowclk.vhd        ;         ;
+; ledctrl.vhd                      ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/ledctrl.vhd        ;         ;
+; over.vhd                         ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/over.vhd           ;         ;
+; timer.vhd                        ; yes             ; User VHDL File  ; /home/gimmepizza/Digital Lab/kholu/timer.vhd          ;         ;
++----------------------------------+-----------------+-----------------+-------------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                     ;
++---------------------------------------------+-------------------+
+; Resource                                    ; Usage             ;
++---------------------------------------------+-------------------+
+; Total logic elements                        ; 598               ;
+;     -- Combinational with no register       ; 338               ;
+;     -- Register only                        ; 69                ;
+;     -- Combinational with a register        ; 191               ;
+;                                             ;                   ;
+; Logic element usage by number of LUT inputs ;                   ;
+;     -- 4 input functions                    ; 160               ;
+;     -- 3 input functions                    ; 112               ;
+;     -- 2 input functions                    ; 194               ;
+;     -- 1 input functions                    ; 63                ;
+;     -- 0 input functions                    ; 0                 ;
+;                                             ;                   ;
+; Logic elements by mode                      ;                   ;
+;     -- normal mode                          ; 430               ;
+;     -- arithmetic mode                      ; 168               ;
+;     -- qfbk mode                            ; 0                 ;
+;     -- register cascade mode                ; 0                 ;
+;     -- synchronous clear/load mode          ; 68                ;
+;     -- asynchronous clear/load mode         ; 44                ;
+;                                             ;                   ;
+; Total registers                             ; 260               ;
+; Total logic cells in carry chains           ; 181               ;
+; I/O pins                                    ; 18                ;
+; Maximum fan-out node                        ; slowclk:s1|outclk ;
+; Maximum fan-out                             ; 163               ;
+; Total fan-out                               ; 2003              ;
+; Average fan-out                             ; 3.25              ;
++---------------------------------------------+-------------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                          ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+----------------+--------------+
+; Compilation Hierarchy Node ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                        ; Entity Name    ; Library Name ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+----------------+--------------+
+; |reactiongame              ; 598 (293)   ; 260          ; 0          ; 18   ; 0            ; 338 (234)    ; 69 (8)            ; 191 (51)         ; 181 (114)       ; 0 (0)      ; |reactiongame                                              ; reactiongame   ; work         ;
+;    |debouncer:s0|          ; 42 (4)      ; 38           ; 0          ; 0    ; 0            ; 4 (4)        ; 0 (0)             ; 38 (0)           ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0                                 ; debouncer      ; work         ;
+;       |counter:c|          ; 36 (0)      ; 36           ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 36 (0)           ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c                       ; counter        ; work         ;
+;          |c16:S1|          ; 8 (0)       ; 8            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1                ; c16            ; work         ;
+;             |c2:T1|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T1          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T1|my_dff:D ; my_dff         ; work         ;
+;             |c2:T2|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T2          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T2|my_dff:D ; my_dff         ; work         ;
+;             |c2:T3|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T3          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T3|my_dff:D ; my_dff         ; work         ;
+;             |c2:T4|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T4          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S1|c2:T4|my_dff:D ; my_dff         ; work         ;
+;          |c16:S2|          ; 8 (0)       ; 8            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2                ; c16            ; work         ;
+;             |c2:T1|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T1          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T1|my_dff:D ; my_dff         ; work         ;
+;             |c2:T2|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T2          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T2|my_dff:D ; my_dff         ; work         ;
+;             |c2:T3|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T3          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T3|my_dff:D ; my_dff         ; work         ;
+;             |c2:T4|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T4          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S2|c2:T4|my_dff:D ; my_dff         ; work         ;
+;          |c16:S3|          ; 8 (0)       ; 8            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3                ; c16            ; work         ;
+;             |c2:T1|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T1          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T1|my_dff:D ; my_dff         ; work         ;
+;             |c2:T2|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T2          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T2|my_dff:D ; my_dff         ; work         ;
+;             |c2:T3|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T3          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T3|my_dff:D ; my_dff         ; work         ;
+;             |c2:T4|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T4          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S3|c2:T4|my_dff:D ; my_dff         ; work         ;
+;          |c16:S4|          ; 8 (0)       ; 8            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 8 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4                ; c16            ; work         ;
+;             |c2:T1|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T1          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T1|my_dff:D ; my_dff         ; work         ;
+;             |c2:T2|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T2          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T2|my_dff:D ; my_dff         ; work         ;
+;             |c2:T3|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T3          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T3|my_dff:D ; my_dff         ; work         ;
+;             |c2:T4|        ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T4          ; c2             ; work         ;
+;                |my_dff:D|  ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c16:S4|c2:T4|my_dff:D ; my_dff         ; work         ;
+;          |c2:T1|           ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c2:T1                 ; c2             ; work         ;
+;             |my_dff:D|     ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c2:T1|my_dff:D        ; my_dff         ; work         ;
+;          |c2:T2|           ; 2 (0)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (0)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c2:T2                 ; c2             ; work         ;
+;             |my_dff:D|     ; 2 (2)       ; 2            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 2 (2)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|counter:c|c2:T2|my_dff:D        ; my_dff         ; work         ;
+;       |my_dff2:D0|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|my_dff2:D0                      ; my_dff2        ; work         ;
+;       |my_dff2:D1|         ; 1 (1)       ; 1            ; 0          ; 0    ; 0            ; 0 (0)        ; 0 (0)             ; 1 (1)            ; 0 (0)           ; 0 (0)      ; |reactiongame|debouncer:s0|my_dff2:D1                      ; my_dff2        ; work         ;
+;    |lcd_controller:s7|     ; 59 (59)     ; 36           ; 0          ; 0    ; 0            ; 23 (23)      ; 5 (5)             ; 31 (31)          ; 0 (0)           ; 0 (0)      ; |reactiongame|lcd_controller:s7                            ; lcd_controller ; work         ;
+;    |ledctrl:s3|            ; 34 (34)     ; 26           ; 0          ; 0    ; 0            ; 8 (8)        ; 12 (12)           ; 14 (14)          ; 13 (13)         ; 0 (0)      ; |reactiongame|ledctrl:s3                                   ; ledctrl        ; work         ;
+;    |looper:s5|             ; 39 (39)     ; 16           ; 0          ; 0    ; 0            ; 23 (23)      ; 2 (2)             ; 14 (14)          ; 8 (8)           ; 0 (0)      ; |reactiongame|looper:s5                                    ; looper         ; work         ;
+;    |over:s6|               ; 16 (16)     ; 8            ; 0          ; 0    ; 0            ; 8 (8)        ; 0 (0)             ; 8 (8)            ; 6 (6)           ; 0 (0)      ; |reactiongame|over:s6                                      ; over           ; work         ;
+;    |randgen:s2|            ; 47 (47)     ; 33           ; 0          ; 0    ; 0            ; 14 (14)      ; 19 (19)           ; 14 (14)          ; 11 (11)         ; 0 (0)      ; |reactiongame|randgen:s2                                   ; randgen        ; work         ;
+;    |slowclk:s1|            ; 42 (42)     ; 18           ; 0          ; 0    ; 0            ; 24 (24)      ; 10 (10)           ; 8 (8)            ; 16 (16)         ; 0 (0)      ; |reactiongame|slowclk:s1                                   ; slowclk        ; work         ;
+;    |timer:s4|              ; 26 (26)     ; 26           ; 0          ; 0    ; 0            ; 0 (0)        ; 13 (13)           ; 13 (13)          ; 13 (13)         ; 0 (0)      ; |reactiongame|timer:s4                                     ; timer          ; work         ;
++----------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+------------------------------------------------------------+----------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |reactiongame|lcd_controller:s7|state                                                                                           ;
++-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; Name      ; state.S11 ; state.S10 ; state.S9 ; state.S8 ; state.S7 ; state.S6 ; state.S5 ; state.S4 ; state.S3 ; state.S2 ; state.S1 ; state.S0 ;
++-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+; state.S0  ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ;
+; state.S1  ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 1        ;
+; state.S2  ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 1        ;
+; state.S3  ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 1        ;
+; state.S4  ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 1        ;
+; state.S5  ; 0         ; 0         ; 0        ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.S6  ; 0         ; 0         ; 0        ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.S7  ; 0         ; 0         ; 0        ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.S8  ; 0         ; 0         ; 0        ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.S9  ; 0         ; 0         ; 1        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.S10 ; 0         ; 1         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
+; state.S11 ; 1         ; 0         ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 0        ; 1        ;
++-----------+-----------+-----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+----------+
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; over:s6|ledcount[3]                                ; nreset              ; yes                    ;
+; over:s6|reactcount[3]                              ; nreset              ; yes                    ;
+; over:s6|ledcount[2]                                ; nreset              ; yes                    ;
+; over:s6|reactcount[2]                              ; nreset              ; yes                    ;
+; over:s6|ledcount[1]                                ; nreset              ; yes                    ;
+; over:s6|reactcount[1]                              ; nreset              ; yes                    ;
+; over:s6|reactcount[0]                              ; nreset              ; yes                    ;
+; over:s6|ledcount[0]                                ; nreset              ; yes                    ;
+; Number of user-specified and inferred latches = 8  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
+
+
++-----------------------------------------------------------------------------------------+
+; Registers Removed During Synthesis                                                      ;
++-----------------------------------------+-----------------------------------------------+
+; Register name                           ; Reason for Removal                            ;
++-----------------------------------------+-----------------------------------------------+
+; lcd_controller:s7|cmd_position[4,5]     ; Stuck at GND due to stuck port data_in        ;
+; lcd_controller:s7|cmd_position[7]       ; Stuck at VCC due to stuck port data_in        ;
+; putdata[7]                              ; Merged with write_data[7]                     ;
+; putdata[6]                              ; Merged with write_data[6]                     ;
+; putdata[5]                              ; Merged with write_data[5]                     ;
+; putdata[4]                              ; Merged with write_data[4]                     ;
+; putdata[3]                              ; Merged with write_data[3]                     ;
+; putdata[2]                              ; Merged with write_data[2]                     ;
+; putdata[1]                              ; Merged with write_data[1]                     ;
+; putdata[0]                              ; Merged with write_data[0]                     ;
+; nextd[3..31]                            ; Merged with nextd[2]                          ;
+; d[3..31]                                ; Merged with d[2]                              ;
+; write_column[2]                         ; Merged with write_column[3]                   ;
+; lcd_controller:s7|cmd_position[3]       ; Merged with lcd_controller:s7|cmd_position[2] ;
+; lcd_controller:s7|lcd_rw                ; Stuck at GND due to stuck port data_in        ;
+; timeint[31]                             ; Stuck at GND due to stuck port data_in        ;
+; write_row[0]                            ; Merged with erase                             ;
+; lcd_controller:s7|state.S10             ; Lost fanout                                   ;
+; lcd_controller:s7|state.S11             ; Lost fanout                                   ;
+; over:s6|ledcount_var[4..31]             ; Lost fanout                                   ;
+; over:s6|reactcount_var[4..31]           ; Lost fanout                                   ;
+; digit[8..31]                            ; Lost fanout                                   ;
+; Total Number of Removed Registers = 156 ;                                               ;
++-----------------------------------------+-----------------------------------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 260   ;
+; Number of registers using Synchronous Clear  ; 45    ;
+; Number of registers using Synchronous Load   ; 27    ;
+; Number of registers using Asynchronous Clear ; 44    ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 92    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------+
+; Inverted Register Statistics                                ;
++---------------------------------------------------+---------+
+; Inverted Register                                 ; Fan out ;
++---------------------------------------------------+---------+
+; put_char                                          ; 4       ;
+; d[0]                                              ; 10      ;
+; d[2]                                              ; 11      ;
+; d[1]                                              ; 11      ;
+; randgen:s2|outsig[3]                              ; 1       ;
+; randgen:s2|outsig[5]                              ; 1       ;
+; randgen:s2|outsig[6]                              ; 1       ;
+; randgen:s2|outsig[7]                              ; 1       ;
+; randgen:s2|outsig[8]                              ; 1       ;
+; randgen:s2|outsig[9]                              ; 1       ;
+; nextd[0]                                          ; 1       ;
+; nextd[2]                                          ; 1       ;
+; nextd[1]                                          ; 1       ;
+; randgen:s2|count[3]                               ; 3       ;
+; randgen:s2|count[5]                               ; 3       ;
+; randgen:s2|count[6]                               ; 3       ;
+; randgen:s2|count[7]                               ; 3       ;
+; randgen:s2|count[8]                               ; 3       ;
+; randgen:s2|count[9]                               ; 3       ;
+; debouncer:s0|counter:c|c2:T2|my_dff:D|Qbar        ; 2       ;
+; debouncer:s0|counter:c|c2:T1|my_dff:D|Qbar        ; 2       ;
+; debouncer:s0|counter:c|c16:S4|c2:T4|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S4|c2:T3|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S4|c2:T2|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S4|c2:T1|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S3|c2:T4|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S3|c2:T3|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S3|c2:T2|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S3|c2:T1|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S2|c2:T4|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S2|c2:T3|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S2|c2:T2|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S2|c2:T1|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S1|c2:T4|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S1|c2:T3|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S1|c2:T2|my_dff:D|Qbar ; 2       ;
+; debouncer:s0|counter:c|c16:S1|c2:T1|my_dff:D|Qbar ; 2       ;
+; Total number of inverted registers = 37           ;         ;
++---------------------------------------------------+---------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                            ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                  ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+; 3:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |reactiongame|lcd_controller:s7|data_dis[0] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; Yes        ; |reactiongame|write_row[0]                  ;
+; 3:1                ; 3 bits    ; 6 LEs         ; 3 LEs                ; 3 LEs                  ; Yes        ; |reactiongame|write_column[0]               ;
+; 4:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |reactiongame|looper:s5|count_sig[3]        ;
+; 4:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; Yes        ; |reactiongame|digit[20]                     ;
+; 5:1                ; 8 bits    ; 24 LEs        ; 8 LEs                ; 16 LEs                 ; Yes        ; |reactiongame|looper:s5|delay[5]            ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 12 LEs               ; 8 LEs                  ; Yes        ; |reactiongame|write_data[6]                 ;
+; 8:1                ; 4 bits    ; 20 LEs        ; 16 LEs               ; 4 LEs                  ; Yes        ; |reactiongame|write_data[3]                 ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 4 LEs                ; 6 LEs                  ; Yes        ; |reactiongame|lcd_controller:s7|lcd[6]      ;
+; 9:1                ; 3 bits    ; 18 LEs        ; 6 LEs                ; 12 LEs                 ; Yes        ; |reactiongame|lcd_controller:s7|lcd[7]      ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reactiongame|digit                         ;
+; 3:1                ; 32 bits   ; 64 LEs        ; 64 LEs               ; 0 LEs                  ; No         ; |reactiongame|digit                         ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 2 LEs                ; 2 LEs                  ; No         ; |reactiongame|lcd_controller:s7|state       ;
+; 7:1                ; 3 bits    ; 12 LEs        ; 12 LEs               ; 0 LEs                  ; No         ; |reactiongame|nextd                         ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+---------------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "looper:s5"                                                                              ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; Port     ; Type   ; Severity ; Details                                                                             ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+; rstcount ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++----------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.0.0 Build 211 04/27/2016 SJ Lite Edition
+    Info: Processing started: Thu Apr 19 14:11:19 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off reactiongame -c reactiongame
+Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 2 design units, including 1 entities, in source file my_dff2.vhdl
+    Info (12022): Found design unit 1: my_dff2-WhatDoYouCare File: /home/gimmepizza/Digital Lab/kholu/my_dff2.vhdl Line: 15
+    Info (12023): Found entity 1: my_dff2 File: /home/gimmepizza/Digital Lab/kholu/my_dff2.vhdl Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file my_dff.vhdl
+    Info (12022): Found design unit 1: my_dff-WhatDoYouCare File: /home/gimmepizza/Digital Lab/kholu/my_dff.vhdl Line: 15
+    Info (12023): Found entity 1: my_dff File: /home/gimmepizza/Digital Lab/kholu/my_dff.vhdl Line: 11
+Info (12021): Found 6 design units, including 3 entities, in source file counter.vhd
+    Info (12022): Found design unit 1: c2-struct1 File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 10
+    Info (12022): Found design unit 2: c16-struct2 File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 31
+    Info (12022): Found design unit 3: counter-struct3 File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 55
+    Info (12023): Found entity 1: c2 File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 6
+    Info (12023): Found entity 2: c16 File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 27
+    Info (12023): Found entity 3: counter File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 51
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_test.vhd
+    Info (12022): Found design unit 1: final_test1-behave File: /home/gimmepizza/Digital Lab/kholu/lcd_test.vhd Line: 20
+    Info (12023): Found entity 1: final_test1 File: /home/gimmepizza/Digital Lab/kholu/lcd_test.vhd Line: 8
+Info (12021): Found 2 design units, including 1 entities, in source file debouncer.vhd
+    Info (12022): Found design unit 1: debouncer-arch File: /home/gimmepizza/Digital Lab/kholu/debouncer.vhd Line: 11
+    Info (12023): Found entity 1: debouncer File: /home/gimmepizza/Digital Lab/kholu/debouncer.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file lcd_controller.vhd
+    Info (12022): Found design unit 1: lcd_controller-Behavioral File: /home/gimmepizza/Digital Lab/kholu/lcd_controller.vhd Line: 24
+    Info (12023): Found entity 1: lcd_controller File: /home/gimmepizza/Digital Lab/kholu/lcd_controller.vhd Line: 6
+Info (12021): Found 2 design units, including 1 entities, in source file randgen.vhd
+    Info (12022): Found design unit 1: randgen-struct File: /home/gimmepizza/Digital Lab/kholu/randgen.vhd Line: 11
+    Info (12023): Found entity 1: randgen File: /home/gimmepizza/Digital Lab/kholu/randgen.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file looper.vhd
+    Info (12022): Found design unit 1: looper-behave File: /home/gimmepizza/Digital Lab/kholu/looper.vhd Line: 12
+    Info (12023): Found entity 1: looper File: /home/gimmepizza/Digital Lab/kholu/looper.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file reactiongame.vhd
+    Info (12022): Found design unit 1: reactiongame-struct File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 17
+    Info (12023): Found entity 1: reactiongame File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file slowclk.vhd
+    Info (12022): Found design unit 1: slowclk-behave File: /home/gimmepizza/Digital Lab/kholu/slowclk.vhd Line: 11
+    Info (12023): Found entity 1: slowclk File: /home/gimmepizza/Digital Lab/kholu/slowclk.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file ledctrl.vhd
+    Info (12022): Found design unit 1: ledctrl-Behave File: /home/gimmepizza/Digital Lab/kholu/ledctrl.vhd Line: 12
+    Info (12023): Found entity 1: ledctrl File: /home/gimmepizza/Digital Lab/kholu/ledctrl.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file over.vhd
+    Info (12022): Found design unit 1: over-behave File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 11
+    Info (12023): Found entity 1: over File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 7
+Info (12021): Found 2 design units, including 1 entities, in source file timer.vhd
+    Info (12022): Found design unit 1: timer-behave File: /home/gimmepizza/Digital Lab/kholu/timer.vhd Line: 11
+    Info (12023): Found entity 1: timer File: /home/gimmepizza/Digital Lab/kholu/timer.vhd Line: 7
+Info (12127): Elaborating entity "reactiongame" for the top level hierarchy
+Warning (10036): Verilog HDL or VHDL warning at reactiongame.vhd(80): object "rstcount_sig" assigned a value but never read File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 80
+Info (12128): Elaborating entity "debouncer" for hierarchy "debouncer:s0" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 98
+Info (12128): Elaborating entity "counter" for hierarchy "debouncer:s0|counter:c" File: /home/gimmepizza/Digital Lab/kholu/debouncer.vhd Line: 24
+Info (12128): Elaborating entity "c16" for hierarchy "debouncer:s0|counter:c|c16:S1" File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 66
+Info (12128): Elaborating entity "c2" for hierarchy "debouncer:s0|counter:c|c16:S1|c2:T1" File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 38
+Info (12128): Elaborating entity "my_dff" for hierarchy "debouncer:s0|counter:c|c16:S1|c2:T1|my_dff:D" File: /home/gimmepizza/Digital Lab/kholu/counter.vhd Line: 16
+Warning (10492): VHDL Process Statement warning at my_dff.vhdl(21): signal "reset" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/gimmepizza/Digital Lab/kholu/my_dff.vhdl Line: 21
+Info (12128): Elaborating entity "my_dff2" for hierarchy "debouncer:s0|my_dff2:D1" File: /home/gimmepizza/Digital Lab/kholu/debouncer.vhd Line: 30
+Info (12128): Elaborating entity "slowclk" for hierarchy "slowclk:s1" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 99
+Info (12128): Elaborating entity "randgen" for hierarchy "randgen:s2" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 100
+Info (12128): Elaborating entity "ledctrl" for hierarchy "ledctrl:s3" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 101
+Info (12128): Elaborating entity "timer" for hierarchy "timer:s4" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 102
+Info (12128): Elaborating entity "looper" for hierarchy "looper:s5" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 103
+Info (12128): Elaborating entity "over" for hierarchy "over:s6" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 104
+Warning (10631): VHDL Process Statement warning at over.vhd(14): inferring latch(es) for signal or variable "reactcount", which holds its previous value in one or more paths through the process File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Warning (10631): VHDL Process Statement warning at over.vhd(14): inferring latch(es) for signal or variable "ledcount", which holds its previous value in one or more paths through the process File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "ledcount[0]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "ledcount[1]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "ledcount[2]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "ledcount[3]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "reactcount[0]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "reactcount[1]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "reactcount[2]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (10041): Inferred latch for "reactcount[3]" at over.vhd(14) File: /home/gimmepizza/Digital Lab/kholu/over.vhd Line: 14
+Info (12128): Elaborating entity "lcd_controller" for hierarchy "lcd_controller:s7" File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 105
+Warning (10036): Verilog HDL or VHDL warning at lcd_controller.vhd(32): object "count_next_data" assigned a value but never read File: /home/gimmepizza/Digital Lab/kholu/lcd_controller.vhd Line: 32
+Warning (10036): Verilog HDL or VHDL warning at lcd_controller.vhd(33): object "count_next_data1" assigned a value but never read File: /home/gimmepizza/Digital Lab/kholu/lcd_controller.vhd Line: 33
+Warning (10036): Verilog HDL or VHDL warning at lcd_controller.vhd(34): object "cmd_line_next" assigned a value but never read File: /home/gimmepizza/Digital Lab/kholu/lcd_controller.vhd Line: 34
+Warning (19016): Clock multiplexers are found and protected
+    Warning (19017): Found clock multiplexer debouncer:s0|output~0 File: /home/gimmepizza/Digital Lab/kholu/debouncer.vhd Line: 9
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "rw" is stuck at GND File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 10
+    Warning (13410): Pin "b11" is stuck at VCC File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 12
+    Warning (13410): Pin "b12" is stuck at GND File: /home/gimmepizza/Digital Lab/kholu/reactiongame.vhd Line: 12
+Info (18000): Registers with preset signals will power-up high File: /home/gimmepizza/Digital Lab/kholu/my_dff.vhdl Line: 12
+Info (17049): 82 registers lost all their fanouts during netlist optimizations.
+Info (21057): Implemented 616 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 3 input pins
+    Info (21059): Implemented 15 output pins
+    Info (21061): Implemented 598 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 14 warnings
+    Info: Peak virtual memory: 1220 megabytes
+    Info: Processing ended: Thu Apr 19 14:11:30 2018
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:24
+
+

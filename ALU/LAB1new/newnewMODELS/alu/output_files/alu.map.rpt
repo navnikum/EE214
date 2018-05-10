@@ -1,0 +1,744 @@
+Analysis & Synthesis report for alu
+Mon Feb 19 19:25:36 2018
+Quartus Prime Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Analysis & Synthesis Summary
+  3. Analysis & Synthesis Settings
+  4. Parallel Compilation
+  5. Analysis & Synthesis Source Files Read
+  6. Analysis & Synthesis Resource Usage Summary
+  7. Analysis & Synthesis Resource Utilization by Entity
+  8. State Machine - |TopLevel|Scan_Chain:scan_instance|current_state
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Parameter Settings for User Entity Instance: Scan_Chain:scan_instance
+ 12. Parameter Settings for User Entity Instance: Scan_Chain:scan_instance|Scan_Reg:In_Reg
+ 13. Parameter Settings for User Entity Instance: Scan_Chain:scan_instance|Scan_Reg:Out_Reg
+ 14. Port Connectivity Checks: "alu:dut|eightbitsub:d|FD:FD_7"
+ 15. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_0h"
+ 16. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_1h"
+ 17. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_1g"
+ 18. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2h"
+ 19. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2g"
+ 20. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2f"
+ 21. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2e"
+ 22. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3h"
+ 23. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3g"
+ 24. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3f"
+ 25. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3e"
+ 26. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3d"
+ 27. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3c"
+ 28. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3b"
+ 29. Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3a"
+ 30. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_0h"
+ 31. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_1h"
+ 32. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_1g"
+ 33. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2h"
+ 34. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2g"
+ 35. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2f"
+ 36. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2e"
+ 37. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3h"
+ 38. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3g"
+ 39. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3f"
+ 40. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3e"
+ 41. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3d"
+ 42. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3c"
+ 43. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3b"
+ 44. Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3a"
+ 45. Port Connectivity Checks: "alu:dut|eightbitadder:a|FA:FA_7"
+ 46. Port Connectivity Checks: "Scan_Chain:scan_instance|Scan_Reg:Out_Reg"
+ 47. Port Connectivity Checks: "Scan_Chain:scan_instance|Scan_Reg:In_Reg"
+ 48. Analysis & Synthesis Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2016  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel MegaCore Function License Agreement, or other 
+applicable license agreement, including, without limitation, 
+that your use is for the sole purpose of programming logic 
+devices manufactured by Intel and sold by Intel or its 
+authorized distributors.  Please refer to the applicable 
+agreement for further details.
+
+
+
++---------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                              ;
++-----------------------------+---------------------------------------------+
+; Analysis & Synthesis Status ; Successful - Mon Feb 19 19:25:36 2018       ;
+; Quartus Prime Version       ; 16.1.0 Build 196 10/24/2016 SJ Lite Edition ;
+; Revision Name               ; alu                                         ;
+; Top-level Entity Name       ; TopLevel                                    ;
+; Family                      ; MAX V                                       ;
+; Total logic elements        ; 163                                         ;
+; Total pins                  ; 5                                           ;
+; Total virtual pins          ; 0                                           ;
+; UFM blocks                  ; 0 / 1 ( 0 % )                               ;
++-----------------------------+---------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Settings                                                                                        ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Option                                                                     ; Setting            ; Default Value      ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+; Device                                                                     ; 5M1270ZT144C5      ;                    ;
+; Top-level entity name                                                      ; TopLevel           ; alu                ;
+; Family name                                                                ; MAX V              ; Cyclone V          ;
+; Use smart compilation                                                      ; Off                ; Off                ;
+; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
+; Enable compact report table                                                ; Off                ; Off                ;
+; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
+; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
+; Preserve fewer node names                                                  ; On                 ; On                 ;
+; OpenCore Plus hardware evaluation                                          ; Enable             ; Enable             ;
+; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
+; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
+; State Machine Processing                                                   ; Auto               ; Auto               ;
+; Safe State Machine                                                         ; Off                ; Off                ;
+; Extract Verilog State Machines                                             ; On                 ; On                 ;
+; Extract VHDL State Machines                                                ; On                 ; On                 ;
+; Ignore Verilog initial constructs                                          ; Off                ; Off                ;
+; Iteration limit for constant Verilog loops                                 ; 5000               ; 5000               ;
+; Iteration limit for non-constant Verilog loops                             ; 250                ; 250                ;
+; Add Pass-Through Logic to Inferred RAMs                                    ; On                 ; On                 ;
+; Infer RAMs from Raw Logic                                                  ; On                 ; On                 ;
+; Parallel Synthesis                                                         ; On                 ; On                 ;
+; NOT Gate Push-Back                                                         ; On                 ; On                 ;
+; Power-Up Don't Care                                                        ; On                 ; On                 ;
+; Remove Redundant Logic Cells                                               ; Off                ; Off                ;
+; Remove Duplicate Registers                                                 ; On                 ; On                 ;
+; Ignore CARRY Buffers                                                       ; Off                ; Off                ;
+; Ignore CASCADE Buffers                                                     ; Off                ; Off                ;
+; Ignore GLOBAL Buffers                                                      ; Off                ; Off                ;
+; Ignore ROW GLOBAL Buffers                                                  ; Off                ; Off                ;
+; Ignore LCELL Buffers                                                       ; Off                ; Off                ;
+; Ignore SOFT Buffers                                                        ; On                 ; On                 ;
+; Limit AHDL Integers to 32 Bits                                             ; Off                ; Off                ;
+; Optimization Technique                                                     ; Balanced           ; Balanced           ;
+; Carry Chain Length                                                         ; 70                 ; 70                 ;
+; Auto Carry Chains                                                          ; On                 ; On                 ;
+; Auto Open-Drain Pins                                                       ; On                 ; On                 ;
+; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
+; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
+; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
+; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
+; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
+; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
+; Auto Resource Sharing                                                      ; Off                ; Off                ;
+; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
+; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
+; Report Parameter Settings                                                  ; On                 ; On                 ;
+; Report Source Assignments                                                  ; On                 ; On                 ;
+; Report Connectivity Checks                                                 ; On                 ; On                 ;
+; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
+; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
+; PowerPlay Power Optimization During Synthesis                              ; Normal compilation ; Normal compilation ;
+; HDL message level                                                          ; Level2             ; Level2             ;
+; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
+; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
+; Number of Swept Nodes Reported in Synthesis Report                         ; 5000               ; 5000               ;
+; Number of Inverted Registers Reported in Synthesis Report                  ; 100                ; 100                ;
+; Clock MUX Protection                                                       ; On                 ; On                 ;
+; Block Design Naming                                                        ; Auto               ; Auto               ;
+; Synthesis Effort                                                           ; Auto               ; Auto               ;
+; Shift Register Replacement - Allow Asynchronous Clear Signal               ; On                 ; On                 ;
+; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
+; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
++----------------------------------------------------------------------------+--------------------+--------------------+
+
+
++------------------------------------------+
+; Parallel Compilation                     ;
++----------------------------+-------------+
+; Processors                 ; Number      ;
++----------------------------+-------------+
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
+;                            ;             ;
+; Average used               ; 1.00        ;
+; Maximum used               ; 1           ;
+;                            ;             ;
+; Usage by Processor         ; % Time Used ;
+;     Processor 1            ; 100.0%      ;
++----------------------------+-------------+
+
+
++------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                 ;
++---------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path                  ; Used in Netlist ; File Type       ; File Name with Absolute Path                                         ; Library ;
++---------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+; ../../../alu_scan_chain/vhdlfiles/TopLevel.vhdl   ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/TopLevel.vhdl   ;         ;
+; ../../../alu_scan_chain/vhdlfiles/scan_reg.vhdl   ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_reg.vhdl   ;         ;
+; ../../../alu_scan_chain/vhdlfiles/scan_chain.vhdl ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl ;         ;
+; ../rightshift.vhd                                 ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd      ;         ;
+; ../leftshift.vhd                                  ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd       ;         ;
+; ../eightbitsub.vhd                                ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd     ;         ;
+; ../eightbitadder.vhd                              ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd   ;         ;
+; ../alu.vhd                                        ; yes             ; User VHDL File  ; /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd             ;         ;
++---------------------------------------------------+-----------------+-----------------+----------------------------------------------------------------------+---------+
+
+
++-----------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary         ;
++---------------------------------------------+-------+
+; Resource                                    ; Usage ;
++---------------------------------------------+-------+
+; Total logic elements                        ; 163   ;
+;     -- Combinational with no register       ; 114   ;
+;     -- Register only                        ; 3     ;
+;     -- Combinational with a register        ; 46    ;
+;                                             ;       ;
+; Logic element usage by number of LUT inputs ;       ;
+;     -- 4 input functions                    ; 99    ;
+;     -- 3 input functions                    ; 31    ;
+;     -- 2 input functions                    ; 30    ;
+;     -- 1 input functions                    ; 0     ;
+;     -- 0 input functions                    ; 0     ;
+;                                             ;       ;
+; Logic elements by mode                      ;       ;
+;     -- normal mode                          ; 163   ;
+;     -- arithmetic mode                      ; 0     ;
+;     -- qfbk mode                            ; 0     ;
+;     -- register cascade mode                ; 0     ;
+;     -- synchronous clear/load mode          ; 8     ;
+;     -- asynchronous clear/load mode         ; 5     ;
+;                                             ;       ;
+; Total registers                             ; 49    ;
+; I/O pins                                    ; 5     ;
+; Maximum fan-out node                        ; TRST  ;
+; Maximum fan-out                             ; 120   ;
+; Total fan-out                               ; 653   ;
+; Average fan-out                             ; 3.89  ;
++---------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                                                     ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node    ; Logic Cells ; LC Registers ; UFM Blocks ; Pins ; Virtual Pins ; LUT-Only LCs ; Register-Only LCs ; LUT/Register LCs ; Carry Chain LCs ; Packed LCs ; Full Hierarchy Name                                 ; Entity Name   ; Library Name ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------+---------------+--------------+
+; |TopLevel                     ; 163 (0)     ; 49           ; 0          ; 5    ; 0            ; 114 (0)      ; 3 (0)             ; 46 (0)           ; 0 (0)           ; 0 (0)      ; |TopLevel                                           ; TopLevel      ; work         ;
+;    |Scan_Chain:scan_instance| ; 97 (6)      ; 49           ; 0          ; 0    ; 0            ; 48 (1)       ; 3 (1)             ; 46 (4)           ; 0 (0)           ; 0 (0)      ; |TopLevel|Scan_Chain:scan_instance                  ; Scan_Chain    ; work         ;
+;       |Scan_Reg:In_Reg|       ; 45 (45)     ; 36           ; 0          ; 0    ; 0            ; 9 (9)        ; 0 (0)             ; 36 (36)          ; 0 (0)           ; 0 (0)      ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:In_Reg  ; Scan_Reg      ; work         ;
+;       |Scan_Reg:Out_Reg|      ; 46 (46)     ; 8            ; 0          ; 0    ; 0            ; 38 (38)      ; 2 (2)             ; 6 (6)            ; 0 (0)           ; 0 (0)      ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:Out_Reg ; Scan_Reg      ; work         ;
+;    |alu:dut|                  ; 66 (6)      ; 0            ; 0          ; 0    ; 0            ; 66 (6)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut                                   ; alu           ; work         ;
+;       |eightbitadder:a|       ; 11 (0)      ; 0            ; 0          ; 0    ; 0            ; 11 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a                   ; eightbitadder ; work         ;
+;          |FA:FA_1|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|FA:FA_1           ; FA            ; work         ;
+;          |FA:FA_2|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|FA:FA_2           ; FA            ; work         ;
+;          |FA:FA_3|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|FA:FA_3           ; FA            ; work         ;
+;          |FA:FA_4|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|FA:FA_4           ; FA            ; work         ;
+;          |FA:FA_5|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|FA:FA_5           ; FA            ; work         ;
+;          |FA:FA_6|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|FA:FA_6           ; FA            ; work         ;
+;          |HA:HA_1|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitadder:a|HA:HA_1           ; HA            ; work         ;
+;       |eightbitsub:d|         ; 11 (0)      ; 0            ; 0          ; 0    ; 0            ; 11 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d                     ; eightbitsub   ; work         ;
+;          |FD:FD_1|            ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d|FD:FD_1             ; FD            ; work         ;
+;          |FD:FD_2|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d|FD:FD_2             ; FD            ; work         ;
+;          |FD:FD_3|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d|FD:FD_3             ; FD            ; work         ;
+;          |FD:FD_4|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d|FD:FD_4             ; FD            ; work         ;
+;          |FD:FD_5|            ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d|FD:FD_5             ; FD            ; work         ;
+;          |FD:FD_6|            ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|eightbitsub:d|FD:FD_6             ; FD            ; work         ;
+;       |leftshift:b|           ; 17 (0)      ; 0            ; 0          ; 0    ; 0            ; 17 (0)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b                       ; leftshift     ; work         ;
+;          |MUX2:MUX2_0a|       ; 5 (5)       ; 0            ; 0          ; 0    ; 0            ; 5 (5)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_0a          ; MUX2          ; work         ;
+;          |MUX2:MUX2_1b|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1b          ; MUX2          ; work         ;
+;          |MUX2:MUX2_1c|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1c          ; MUX2          ; work         ;
+;          |MUX2:MUX2_1d|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1d          ; MUX2          ; work         ;
+;          |MUX2:MUX2_1e|       ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1e          ; MUX2          ; work         ;
+;          |MUX2:MUX2_1f|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1f          ; MUX2          ; work         ;
+;          |MUX2:MUX2_1g|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1g          ; MUX2          ; work         ;
+;          |MUX2:MUX2_2c|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_2c          ; MUX2          ; work         ;
+;          |MUX2:MUX2_2d|       ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_2d          ; MUX2          ; work         ;
+;       |rightshift:c|          ; 21 (2)      ; 0            ; 0          ; 0    ; 0            ; 21 (2)       ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c                      ; rightshift    ; work         ;
+;          |MUX21:MUX2_0a|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_0a        ; MUX21         ; work         ;
+;          |MUX21:MUX2_0h|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_0h        ; MUX21         ; work         ;
+;          |MUX21:MUX2_1b|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_1b        ; MUX21         ; work         ;
+;          |MUX21:MUX2_1c|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_1c        ; MUX21         ; work         ;
+;          |MUX21:MUX2_1d|      ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_1d        ; MUX21         ; work         ;
+;          |MUX21:MUX2_1e|      ; 2 (2)       ; 0            ; 0          ; 0    ; 0            ; 2 (2)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_1e        ; MUX21         ; work         ;
+;          |MUX21:MUX2_1f|      ; 3 (3)       ; 0            ; 0          ; 0    ; 0            ; 3 (3)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_1f        ; MUX21         ; work         ;
+;          |MUX21:MUX2_1g|      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_1g        ; MUX21         ; work         ;
+;          |MUX21:MUX2_2c|      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_2c        ; MUX21         ; work         ;
+;          |MUX21:MUX2_2d|      ; 1 (1)       ; 0            ; 0          ; 0    ; 0            ; 1 (1)        ; 0 (0)             ; 0 (0)            ; 0 (0)           ; 0 (0)      ; |TopLevel|alu:dut|rightshift:c|MUX21:MUX2_2d        ; MUX21         ; work         ;
++-------------------------------+-------------+--------------+------------+------+--------------+--------------+-------------------+------------------+-----------------+------------+-----------------------------------------------------+---------------+--------------+
+Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
+Encoding Type:  One-Hot
++------------------------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |TopLevel|Scan_Chain:scan_instance|current_state                                                                               ;
++-------------------------+------------------------+-----------------------+-------------------------+--------------------+----------------------+
+; Name                    ; current_state.s_update ; current_state.s_shift ; current_state.s_capture ; current_state.s_DR ; current_state.s_idle ;
++-------------------------+------------------------+-----------------------+-------------------------+--------------------+----------------------+
+; current_state.s_idle    ; 0                      ; 0                     ; 0                       ; 0                  ; 0                    ;
+; current_state.s_DR      ; 0                      ; 0                     ; 0                       ; 1                  ; 1                    ;
+; current_state.s_capture ; 0                      ; 0                     ; 1                       ; 0                  ; 1                    ;
+; current_state.s_shift   ; 0                      ; 1                     ; 0                       ; 0                  ; 1                    ;
+; current_state.s_update  ; 1                      ; 0                     ; 0                       ; 0                  ; 1                    ;
++-------------------------+------------------------+-----------------------+-------------------------+--------------------+----------------------+
+
+
++------------------------------------------------------+
+; General Register Statistics                          ;
++----------------------------------------------+-------+
+; Statistic                                    ; Value ;
++----------------------------------------------+-------+
+; Total registers                              ; 49    ;
+; Number of registers using Synchronous Clear  ; 8     ;
+; Number of registers using Synchronous Load   ; 0     ;
+; Number of registers using Asynchronous Clear ; 5     ;
+; Number of registers using Asynchronous Load  ; 0     ;
+; Number of registers using Clock Enable       ; 44    ;
+; Number of registers using Preset             ; 0     ;
++----------------------------------------------+-------+
+
+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                                ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+; 3:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:In_Reg|L2[16] ;
+; 4:1                ; 18 bits   ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:In_Reg|L1[7]  ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:Out_Reg|L1[3] ;
+; 8:1                ; 2 bits    ; 10 LEs        ; 8 LEs                ; 2 LEs                  ; Yes        ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:Out_Reg|L1[6] ;
+; 9:1                ; 2 bits    ; 12 LEs        ; 10 LEs               ; 2 LEs                  ; Yes        ; |TopLevel|Scan_Chain:scan_instance|Scan_Reg:Out_Reg|L1[5] ;
+; 3:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_1b|o              ;
+; 4:1                ; 2 bits    ; 4 LEs         ; 4 LEs                ; 0 LEs                  ; No         ; |TopLevel|alu:dut|leftshift:b|MUX2:MUX2_0a|o              ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------------------------+
+
+
++-----------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Scan_Chain:scan_instance ;
++----------------+-------+----------------------------------------------+
+; Parameter Name ; Value ; Type                                         ;
++----------------+-------+----------------------------------------------+
+; in_pins        ; 18    ; Signed Integer                               ;
+; out_pins       ; 8     ; Signed Integer                               ;
++----------------+-------+----------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++---------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Scan_Chain:scan_instance|Scan_Reg:In_Reg ;
++----------------+-------+--------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                         ;
++----------------+-------+--------------------------------------------------------------+
+; length         ; 18    ; Signed Integer                                               ;
++----------------+-------+--------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: Scan_Chain:scan_instance|Scan_Reg:Out_Reg ;
++----------------+-------+---------------------------------------------------------------+
+; Parameter Name ; Value ; Type                                                          ;
++----------------+-------+---------------------------------------------------------------+
+; length         ; 8     ; Signed Integer                                                ;
++----------------+-------+---------------------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|eightbitsub:d|FD:FD_7"                                                      ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; bout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_0h" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_1h" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_1g" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2h" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2g" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2f" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_2e" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3h" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3g" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3f" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3e" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3d" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3c" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3b" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++----------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|rightshift:c|MUX21:MUX2_3a" ;
++------+-------+----------+--------------------------------------+
+; Port ; Type  ; Severity ; Details                              ;
++------+-------+----------+--------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                         ;
++------+-------+----------+--------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_0h" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_1h" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_1g" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2h" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2g" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2f" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_2e" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3h" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3g" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3f" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3e" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3d" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3c" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3b" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++--------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|leftshift:b|MUX2:MUX2_3a" ;
++------+-------+----------+------------------------------------+
+; Port ; Type  ; Severity ; Details                            ;
++------+-------+----------+------------------------------------+
+; b    ; Input ; Info     ; Stuck at GND                       ;
++------+-------+----------+------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "alu:dut|eightbitadder:a|FA:FA_7"                                                    ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; cout ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "Scan_Chain:scan_instance|Scan_Reg:Out_Reg"                                          ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                             ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+; po   ; Output ; Info     ; Connected to dangling logic. Logic that only feeds a dangling port will be removed. ;
++------+--------+----------+-------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------+
+; Port Connectivity Checks: "Scan_Chain:scan_instance|Scan_Reg:In_Reg" ;
++------+-------+----------+--------------------------------------------+
+; Port ; Type  ; Severity ; Details                                    ;
++------+-------+----------+--------------------------------------------+
+; pi   ; Input ; Info     ; Stuck at GND                               ;
++------+-------+----------+--------------------------------------------+
+
+
++-------------------------------+
+; Analysis & Synthesis Messages ;
++-------------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime Analysis & Synthesis
+    Info: Version 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+    Info: Processing started: Mon Feb 19 19:25:18 2018
+Info: Command: quartus_map --read_settings_files=on --write_settings_files=off alu -c alu
+Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (12021): Found 2 design units, including 1 entities, in source file /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+    Info (12022): Found design unit 1: DUT-DutWrap File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd Line: 15
+    Info (12023): Found entity 1: DUT File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/TopLevel.vhdl
+    Info (12022): Found design unit 1: TopLevel-Struct File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/TopLevel.vhdl Line: 21
+    Info (12023): Found entity 1: TopLevel File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/TopLevel.vhdl Line: 11
+Info (12021): Found 2 design units, including 1 entities, in source file /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_reg.vhdl
+    Info (12022): Found design unit 1: Scan_Reg-behave File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_reg.vhdl Line: 26
+    Info (12023): Found entity 1: Scan_Reg File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_reg.vhdl Line: 10
+Info (12021): Found 2 design units, including 1 entities, in source file /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl
+    Info (12022): Found design unit 1: Scan_Chain-behave File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl Line: 26
+    Info (12023): Found entity 1: Scan_Chain File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl Line: 10
+Info (12021): Found 7 design units, including 3 entities, in source file /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd
+    Info (12022): Found design unit 1: EE224_Components2 File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 7
+    Info (12022): Found design unit 2: MUX21-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 26
+    Info (12022): Found design unit 3: MUX4-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 36
+    Info (12022): Found design unit 4: rightshift-behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 59
+    Info (12023): Found entity 1: MUX21 File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 22
+    Info (12023): Found entity 2: MUX4 File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 32
+    Info (12023): Found entity 3: rightshift File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 55
+Info (12021): Found 5 design units, including 2 entities, in source file /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd
+    Info (12022): Found design unit 1: EE224_Components3 File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd Line: 7
+    Info (12022): Found design unit 2: MUX2-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd Line: 26
+    Info (12022): Found design unit 3: leftshift-behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd Line: 52
+    Info (12023): Found entity 1: MUX2 File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd Line: 22
+    Info (12023): Found entity 2: leftshift File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd Line: 47
+Info (12021): Found 7 design units, including 3 entities, in source file /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd
+    Info (12022): Found design unit 1: EE224_Components1 File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 7
+    Info (12022): Found design unit 2: HD-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 28
+    Info (12022): Found design unit 3: FD-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 42
+    Info (12022): Found design unit 4: eightbitsub-behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 63
+    Info (12023): Found entity 1: HD File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 24
+    Info (12023): Found entity 2: FD File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 38
+    Info (12023): Found entity 3: eightbitsub File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 59
+Info (12021): Found 7 design units, including 3 entities, in source file /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd
+    Info (12022): Found design unit 1: EE224_Components File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 6
+    Info (12022): Found design unit 2: HA-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 28
+    Info (12022): Found design unit 3: FA-Behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 42
+    Info (12022): Found design unit 4: eightbitadder-behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 64
+    Info (12023): Found entity 1: HA File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 24
+    Info (12023): Found entity 2: FA File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 38
+    Info (12023): Found entity 3: eightbitadder File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 60
+Info (12021): Found 2 design units, including 1 entities, in source file /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd
+    Info (12022): Found design unit 1: alu-behave File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd Line: 13
+    Info (12023): Found entity 1: alu File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd Line: 9
+Info (12127): Elaborating entity "TopLevel" for the top level hierarchy
+Info (12128): Elaborating entity "Scan_Chain" for hierarchy "Scan_Chain:scan_instance" File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/TopLevel.vhdl Line: 51
+Warning (10036): Verilog HDL or VHDL warning at scan_chain.vhdl(46): object "unused" assigned a value but never read File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl Line: 46
+Info (12128): Elaborating entity "Scan_Reg" for hierarchy "Scan_Chain:scan_instance|Scan_Reg:In_Reg" File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl Line: 53
+Info (12128): Elaborating entity "Scan_Reg" for hierarchy "Scan_Chain:scan_instance|Scan_Reg:Out_Reg" File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/scan_chain.vhdl Line: 55
+Info (12128): Elaborating entity "alu" for hierarchy "alu:dut" File: /home/navnit1224/EEsem4/214/alu_scan_chain/vhdlfiles/TopLevel.vhdl Line: 61
+Info (12128): Elaborating entity "eightbitadder" for hierarchy "alu:dut|eightbitadder:a" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd Line: 35
+Info (12128): Elaborating entity "HA" for hierarchy "alu:dut|eightbitadder:a|HA:HA_1" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 67
+Info (12128): Elaborating entity "FA" for hierarchy "alu:dut|eightbitadder:a|FA:FA_1" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd Line: 68
+Info (12128): Elaborating entity "leftshift" for hierarchy "alu:dut|leftshift:b" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd Line: 36
+Info (12128): Elaborating entity "MUX2" for hierarchy "alu:dut|leftshift:b|MUX2:MUX2_3a" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd Line: 59
+Info (12128): Elaborating entity "rightshift" for hierarchy "alu:dut|rightshift:c" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd Line: 37
+Info (12128): Elaborating entity "MUX21" for hierarchy "alu:dut|rightshift:c|MUX21:MUX2_3a" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd Line: 65
+Info (12128): Elaborating entity "eightbitsub" for hierarchy "alu:dut|eightbitsub:d" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd Line: 38
+Info (12128): Elaborating entity "HD" for hierarchy "alu:dut|eightbitsub:d|HD:HD_1" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 66
+Info (12128): Elaborating entity "FD" for hierarchy "alu:dut|eightbitsub:d|FD:FD_1" File: /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd Line: 67
+Info (21057): Implemented 168 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 4 input pins
+    Info (21059): Implemented 1 output pins
+    Info (21061): Implemented 163 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 936 megabytes
+    Info: Processing ended: Mon Feb 19 19:25:36 2018
+    Info: Elapsed time: 00:00:18
+    Info: Total CPU time (on all processors): 00:00:42
+
+

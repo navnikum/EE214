@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/wel/Downloads/GOA/xor_2.vhd
+source_file = 1, /home/wel/Downloads/GOA/HA.vhd
+source_file = 1, /home/wel/Downloads/GOA/db/adder.cbx.xml
+source_file = 1, /home/wel/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/wel/altera/13.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/wel/altera/13.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/wel/altera/13.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = HA
+instance = comp, \A~I\, A, HA, 1
+instance = comp, \B~I\, B, HA, 1
+instance = comp, \A1|C~1\, A1|C~1, HA, 1
+instance = comp, \carry~2\, carry~2, HA, 1
+instance = comp, \sum~I\, sum, HA, 1
+instance = comp, \carry~I\, carry, HA, 1

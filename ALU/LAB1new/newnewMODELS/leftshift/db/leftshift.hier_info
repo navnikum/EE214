@@ -1,0 +1,331 @@
+|DUT
+input_vector[0] => leftshift:b.y[0]
+input_vector[1] => leftshift:b.y[1]
+input_vector[2] => leftshift:b.y[2]
+input_vector[3] => leftshift:b.y[3]
+input_vector[4] => leftshift:b.y[4]
+input_vector[5] => leftshift:b.y[5]
+input_vector[6] => leftshift:b.y[6]
+input_vector[7] => leftshift:b.y[7]
+input_vector[8] => leftshift:b.x[0]
+input_vector[9] => leftshift:b.x[1]
+input_vector[10] => leftshift:b.x[2]
+input_vector[11] => leftshift:b.x[3]
+input_vector[12] => leftshift:b.x[4]
+input_vector[13] => leftshift:b.x[5]
+input_vector[14] => leftshift:b.x[6]
+input_vector[15] => leftshift:b.x[7]
+output_vector[0] <= leftshift:b.z[0]
+output_vector[1] <= leftshift:b.z[1]
+output_vector[2] <= leftshift:b.z[2]
+output_vector[3] <= leftshift:b.z[3]
+output_vector[4] <= leftshift:b.z[4]
+output_vector[5] <= leftshift:b.z[5]
+output_vector[6] <= leftshift:b.z[6]
+output_vector[7] <= leftshift:b.z[7]
+
+
+|DUT|leftshift:b
+x[0] => MUX2:MUX2_3h.a
+x[1] => MUX2:MUX2_3g.a
+x[2] => MUX2:MUX2_3f.a
+x[3] => MUX2:MUX2_3e.a
+x[4] => MUX2:MUX2_3d.a
+x[5] => MUX2:MUX2_3c.a
+x[6] => MUX2:MUX2_3b.a
+x[7] => MUX2:MUX2_3a.a
+y[0] => MUX2:MUX2_0a.n
+y[0] => MUX2:MUX2_0b.n
+y[0] => MUX2:MUX2_0c.n
+y[0] => MUX2:MUX2_0d.n
+y[0] => MUX2:MUX2_0e.n
+y[0] => MUX2:MUX2_0f.n
+y[0] => MUX2:MUX2_0g.n
+y[0] => MUX2:MUX2_0h.n
+y[1] => MUX2:MUX2_1a.n
+y[1] => MUX2:MUX2_1b.n
+y[1] => MUX2:MUX2_1c.n
+y[1] => MUX2:MUX2_1d.n
+y[1] => MUX2:MUX2_1e.n
+y[1] => MUX2:MUX2_1f.n
+y[1] => MUX2:MUX2_1g.n
+y[1] => MUX2:MUX2_1h.n
+y[2] => MUX2:MUX2_2a.n
+y[2] => MUX2:MUX2_2b.n
+y[2] => MUX2:MUX2_2c.n
+y[2] => MUX2:MUX2_2d.n
+y[2] => MUX2:MUX2_2e.n
+y[2] => MUX2:MUX2_2f.n
+y[2] => MUX2:MUX2_2g.n
+y[2] => MUX2:MUX2_2h.n
+y[3] => p.IN1
+y[4] => p.IN1
+y[5] => p.IN1
+y[6] => p.IN0
+y[7] => p.IN1
+z[0] <= MUX2:MUX2_0h.o
+z[1] <= MUX2:MUX2_0g.o
+z[2] <= MUX2:MUX2_0f.o
+z[3] <= MUX2:MUX2_0e.o
+z[4] <= MUX2:MUX2_0d.o
+z[5] <= MUX2:MUX2_0c.o
+z[6] <= MUX2:MUX2_0b.o
+z[7] <= MUX2:MUX2_0a.o
+
+
+|DUT|leftshift:b|MUX2:MUX2_3a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_3h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_2h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_1h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|leftshift:b|MUX2:MUX2_0h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

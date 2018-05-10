@@ -1,0 +1,59 @@
+library std;
+use std.standard.all;
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity looper is
+	port (React,Reset,sclk : in std_logic;
+			newrst,done : out std_logic;
+			rstcount : out std_logic_vector(3 downto 0));
+end entity;
+architecture behave of looper is 
+signal rst_sig,done_sig : std_logic := '0';
+signal count_sig : unsigned(3 downto 0) := to_unsigned(0,4);
+signal delay : unsigned(7 downto 0) := to_unsigned(0,8);
+
+begin
+	process(React,Reset,sclk)
+	begin
+	if rising_edge(sclk) then
+	if (Reset = '1') then
+			delay <= to_unsigned(0,8);
+			count_sig <= to_unsigned(0,4);
+			done_sig <= '0';
+	end if;
+	
+	if(Reset = '0') then
+		if (React='1') then
+			delay <= to_unsigned(0,8);
+		end if;
+	
+		if (React='0' and count_sig < to_unsigned(9,4)) then
+			if (delay < 100) then
+				delay <= delay + 1;
+			end if;
+				
+			if (delay = to_unsigned(10,8)) then
+				rst_sig <= '1';
+			end if;
+			if (delay = to_unsigned(50,8)) then
+				rst_sig <= '0';
+				count_sig <= count_sig + 1;
+			end if;
+		
+		end if;
+		
+		if (count_sig > to_unsigned(8,4)) then
+			rst_sig <= '1';
+			done_sig <= '1';
+		end if;
+		
+	end if;
+	
+	rstcount <= std_logic_vector(count_sig);
+	done <= done_sig;
+	newrst <= rst_sig;
+	end if;
+	end process;
+end behave;

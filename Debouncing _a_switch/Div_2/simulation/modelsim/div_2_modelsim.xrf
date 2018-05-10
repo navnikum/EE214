@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, /home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd
+source_file = 1, /home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FFn.vhd
+source_file = 1, /home/navnit1224/EEsem4/214/Debouncing _a_switch/detect.vhd
+source_file = 1, /home/navnit1224/EEsem4/214/Debouncing _a_switch/debounding.vhd
+source_file = 1, /home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, /home/navnit1224/intelFPGA_lite/16.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, /home/navnit1224/EEsem4/214/Debouncing _a_switch/Div_2/db/div_2.cbx.xml
+design_name = Div_2
+instance = comp, \clk~I\, clk, Div_2, 1
+instance = comp, \rst~I\, rst, Div_2, 1
+instance = comp, \Y~I\, Y, Div_2, 1

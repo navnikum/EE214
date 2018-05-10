@@ -1,0 +1,291 @@
+|DUT
+input_vector[0] => final:dut.x[0]
+input_vector[1] => final:dut.x[1]
+input_vector[2] => final:dut.x[2]
+input_vector[3] => final:dut.x[3]
+input_vector[4] => final:dut.x[4]
+input_vector[5] => final:dut.x[5]
+input_vector[6] => final:dut.x[6]
+input_vector[7] => final:dut.x[7]
+output_vector[0] << final:dut.y[0]
+output_vector[1] << final:dut.y[1]
+
+
+|DUT|final:dut
+x[0] => no_of:no_of_0.x[0]
+x[1] => no_of:no_of_0.x[1]
+x[2] => no_of:no_of_0.x[2]
+x[3] => no_of:no_of_0.x[3]
+x[4] => no_of:no_of_0.x[4]
+x[5] => no_of:no_of_0.x[5]
+x[6] => no_of:no_of_0.x[6]
+x[7] => no_of:no_of_0.x[7]
+y[0] <= g.DB_MAX_OUTPUT_PORT_TYPE
+y[1] <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0
+x[0] => FSA:FSA_0.x[0]
+x[1] => FSA:FSA_0.x[1]
+x[2] => FSA:FSA_0.x[2]
+x[3] => FSA:FSA_0.x[3]
+x[4] => FSA:FSA_1.x[0]
+x[5] => FSA:FSA_1.x[1]
+x[6] => FSA:FSA_1.x[2]
+x[7] => FSA:FSA_1.x[3]
+o[0] <= FA:FA_0.s
+o[1] <= FA:FA_1.s
+o[2] <= FA:FA_2.s
+o[3] <= FA:FA_2.cout
+z[0] <= FD:FD_0.d
+z[1] <= FD:FD_1.d
+z[2] <= FD:FD_2.d
+z[3] <= FD:FD_3.d
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_0
+x[0] => FA:FA_0.b
+x[1] => FA:FA_0.a
+x[2] => FA:FA_1a.a
+x[3] => FA:FA_1b.b
+o[0] <= FA:FA_1b.s
+o[1] <= FA:FA_2b.s
+o[2] <= FA:FA_2b.cout
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_0|FA:FA_0
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_0|FA:FA_1a
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_0|FA:FA_2a
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_0|FA:FA_1b
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_0|FA:FA_2b
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_1
+x[0] => FA:FA_0.b
+x[1] => FA:FA_0.a
+x[2] => FA:FA_1a.a
+x[3] => FA:FA_1b.b
+o[0] <= FA:FA_1b.s
+o[1] <= FA:FA_2b.s
+o[2] <= FA:FA_2b.cout
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_1|FA:FA_0
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_1|FA:FA_1a
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_1|FA:FA_2a
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_1|FA:FA_1b
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FSA:FSA_1|FA:FA_2b
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FA:FA_0
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FA:FA_1
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FA:FA_2
+a => w.IN0
+a => cout.IN0
+a => cout.IN0
+b => w.IN1
+b => cout.IN0
+b => cout.IN1
+cin => s.IN1
+cin => cout.IN1
+cin => cout.IN1
+s <= s.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FD:FD_0
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FD:FD_1
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FD:FD_2
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|final:dut|no_of:no_of_0|FD:FD_3
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,11 @@
+Fitter Status : Successful - Mon Feb 19 10:10:28 2018
+Quartus Prime Version : 16.1.0 Build 196 10/24/2016 SJ Lite Edition
+Revision Name : leftshift
+Top-level Entity Name : DUT
+Family : MAX V
+Device : 5M1270ZT144C5
+Timing Models : Final
+Total logic elements : 24 / 1,270 ( 2 % )
+Total pins : 24 / 114 ( 21 % )
+Total virtual pins : 0
+UFM blocks : 0 / 1 ( 0 % )

@@ -1,0 +1,75 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/wel/Downloads/GOA/simulation/modelsim
+Eha
+Z1 w1513056818
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 d/home/wel/Downloads/GOA/simulation/modelsim
+Z5 8/home/wel/Downloads/GOA/HA.vhd
+Z6 F/home/wel/Downloads/GOA/HA.vhd
+l0
+L4
+VNS:g[`>L:5obg^<XjI:^Q2
+!s100 e8hSC5Bk0334<aA?e7dV72
+Z7 OV;C;10.1d;51
+31
+!i10b 1
+Z8 !s108 1513192447.267674
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/wel/Downloads/GOA/HA.vhd|
+Z10 !s107 /home/wel/Downloads/GOA/HA.vhd|
+Z11 o-93 -work work -O0
+Z12 tExplicit 1
+Astruc
+R2
+R3
+DEx4 work 2 ha 0 22 NS:g[`>L:5obg^<XjI:^Q2
+l18
+L11
+V_j=>koWF1PN?7HLJBdeb@0
+!s100 R;YPVOkmP1edU[IS@j:?T1
+R7
+31
+!i10b 1
+R8
+R9
+R10
+R11
+R12
+Exor_2
+Z13 w1513055118
+R2
+R3
+R4
+Z14 8/home/wel/Downloads/GOA/xor_2.vhd
+Z15 F/home/wel/Downloads/GOA/xor_2.vhd
+l0
+L4
+Vh<V]SQO@1h^I5ih[B<;FQ2
+R7
+31
+Z16 !s108 1513192447.142432
+Z17 !s90 -reportprogress|300|-93|-work|work|/home/wel/Downloads/GOA/xor_2.vhd|
+Z18 !s107 /home/wel/Downloads/GOA/xor_2.vhd|
+R11
+R12
+!s100 8G@EUFT3k`K0NZmGBoOIa2
+!i10b 1
+Abeh
+R2
+R3
+DEx4 work 5 xor_2 0 22 h<V]SQO@1h^I5ih[B<;FQ2
+l11
+L9
+V0H[enTYJJ?i3@7JX^CVLM3
+R7
+31
+R16
+R17
+R18
+R11
+R12
+!s100 9OUO^D[4a=@zem<GTDV<<3
+!i10b 1

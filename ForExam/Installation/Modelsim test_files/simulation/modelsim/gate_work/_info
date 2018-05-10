@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 d/home/student/Desktop/GOA/simulation/modelsim
+Exor_2
+Z1 w1513055131
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx3 max 13 max_atom_pack 0 22 :gRoUTzOQ7b[oYYmR;V6`3
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx3 max 14 max_components 0 22 CF>2ZCVhh;<S`;QoR9]?a1
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 d/home/student/Desktop/GOA/simulation/modelsim
+Z9 8adder.vho
+Z10 Fadder.vho
+l0
+L34
+VhQNSk^GQz1KezOF9l6YZ23
+!s100 DYk01cF6JHA:1eNEF^WOb1
+Z11 OV;C;10.1d;51
+31
+!i10b 1
+Z12 !s108 1513055561.182153
+Z13 !s90 -reportprogress|300|-93|-work|work|adder.vho|
+Z14 !s107 adder.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 5 xor_2 0 22 hQNSk^GQz1KezOF9l6YZ23
+l70
+L48
+Vz>mk@7J[nagX0H`Tg6Gmz3
+!s100 ILe5n27aQROOa9a3[YFY<3
+R11
+31
+!i10b 1
+R12
+R13
+R14
+R15
+R16

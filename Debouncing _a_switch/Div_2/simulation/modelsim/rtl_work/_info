@@ -1,0 +1,88 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/Debouncing _a_switch/Div_2/simulation/modelsim
+Ed_ff1
+Z1 w1521115811
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd
+Z5 F/home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd
+l0
+L6
+VX8n6FUok8:?`3`D[Q^X?L0
+!s100 D`HLkTfl3>=cP5Gk@BlNj3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1521115872
+!i10b 1
+Z8 !s108 1521115872.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Awhatdoyoucare
+R2
+R3
+DEx4 work 5 d_ff1 0 22 X8n6FUok8:?`3`D[Q^X?L0
+l11
+L10
+V6]^2Sel^Z8MLJPMSEB;hY3
+!s100 ZA47kLo6HMKcc>U`Zc5aX0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ediv_2
+Z13 w1521115630
+R2
+R3
+R0
+Z14 8/home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd
+Z15 F/home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd
+l0
+L6
+Vk?^k27`[CHo@Vd88[e?j:1
+!s100 SD_87N@3:GC0N=Mz@mBjc3
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 5 div_2 0 22 k?^k27`[CHo@Vd88[e?j:1
+l15
+L10
+V4bL^^RBLfQYYBF<IHQ9<P0
+!s100 O0;nUZ[:1gW]98f^I4KFX2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

@@ -1,0 +1,505 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/StringRecognizer/ppgun/simulation/modelsim
+Eand_5
+Z1 w1520515443
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/StringRecognizer/gunman.vhd
+Z5 F/home/navnit1224/EEsem4/214/StringRecognizer/gunman.vhd
+l0
+L19
+VMi7?m8E_F8M6nofUSS[5g2
+!s100 @JCgR^UF7Xja0`a1n;7>B3
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1520619328
+!i10b 1
+Z8 !s108 1520619328.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/gunman.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/gunman.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Awhatdoyoucar
+R2
+R3
+DEx4 work 5 and_5 0 22 Mi7?m8E_F8M6nofUSS[5g2
+l23
+L22
+VD8S9FHHOQ:hFB_:GWWn5A3
+!s100 =mIo2817:_JH3m1hNCnWC0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Ebomber
+Z13 w1520517943
+R2
+R3
+R0
+Z14 8/home/navnit1224/EEsem4/214/StringRecognizer/bomber.vhd
+Z15 F/home/navnit1224/EEsem4/214/StringRecognizer/bomber.vhd
+l0
+L7
+VERo>d8fHhcY1=e?Pc1FHP1
+!s100 f9UJTU=T6;Ehl`0BJ0_F23
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/bomber.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/bomber.vhd|
+!i113 1
+R11
+R12
+Abomb_detector
+R2
+R3
+DEx4 work 6 bomber 0 22 ERo>d8fHhcY1=e?Pc1FHP1
+l22
+L11
+VB@b982GoRFh0KIIJVTD<a0
+!s100 75mTNn7c4oM:]G^?]mRzo0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ed_ff
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L30
+VE<>e5BH406iLKNcLi7WTk3
+!s100 jS_J2zTeFMH72C??goMa?2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 4 d_ff 0 22 E<>e5BH406iLKNcLi7WTk3
+l34
+L33
+Voh=D2iIQXiQhYc;h3VHWd2
+!s100 Kbg5:KMO?6D1L`m1Jhm4R2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z18 w1520519745
+R2
+R3
+R0
+Z19 8/home/navnit1224/EEsem4/214/StringRecognizer/DUT.vhd
+Z20 F/home/navnit1224/EEsem4/214/StringRecognizer/DUT.vhd
+l0
+L8
+Vj@B0QbZcSU56GH?YLmPYU3
+!s100 a@hh[c10z6nA9kl6Z>O:I0
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/DUT.vhd|
+Z22 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 j@B0QbZcSU56GH?YLmPYU3
+l19
+L13
+V[=DAF=]lI;BoZ==;BmOHY2
+!s100 H<0P`VQ_oS81gj@cRIY593
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Pee224_components
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L7
+V2:MVa>m5b<X4g`;n;hV1>2
+!s100 k]Oc6c=IdbOGk1mUgZ]>22
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Egunman
+R1
+Z23 DPx4 work 16 ee224_components 0 22 2:MVa>m5b<X4g`;n;hV1>2
+R2
+R3
+R0
+R4
+R5
+l0
+L51
+VZV?7=N`ToETD@afIMDJ^Y0
+!s100 ZL2MjMak3Qbg2TW8;kMV43
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Agun_detector
+R23
+R2
+R3
+DEx4 work 6 gunman 0 22 ZV?7=N`ToETD@afIMDJ^Y0
+l59
+L55
+VYG3T^P2:cVaPT`>mDNnUo3
+!s100 VYj=o;l3Om<zi]^RGQFOC0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eknife
+Z24 w1520535171
+R2
+R3
+R0
+Z25 8/home/navnit1224/EEsem4/214/StringRecognizer/knife.vhd
+Z26 F/home/navnit1224/EEsem4/214/StringRecognizer/knife.vhd
+l0
+L6
+V4XZYaS47;e1Bg<o]M<3F22
+!s100 of5<H4fNaf`[<dcoGUZ3h3
+R6
+31
+R7
+!i10b 1
+R8
+Z27 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/knife.vhd|
+Z28 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/knife.vhd|
+!i113 1
+R11
+R12
+Aknife_detector
+R2
+R3
+DEx4 work 5 knife 0 22 4XZYaS47;e1Bg<o]M<3F22
+l20
+L10
+VMPZRGC`HQF<>_i:>n@izZ2
+!s100 BOhHB5m=he[N?neAOMKXL3
+R6
+31
+R7
+!i10b 1
+R8
+R27
+R28
+!i113 1
+R11
+R12
+Escan_chain
+Z29 w1486881226
+Z30 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+R2
+R3
+R0
+Z31 8/home/navnit1224/EEsem4/214/StringRecognizer/scan_chain.vhdl
+Z32 F/home/navnit1224/EEsem4/214/StringRecognizer/scan_chain.vhdl
+l0
+L10
+VAlVBYFI5hDH[WHJd2kVEL1
+!s100 EDKS_ZA11R2:C]LfzfaMG0
+R6
+31
+R7
+!i10b 1
+R8
+Z33 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/scan_chain.vhdl|
+Z34 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/scan_chain.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R30
+R2
+R3
+DEx4 work 10 scan_chain 0 22 AlVBYFI5hDH[WHJd2kVEL1
+l50
+L26
+VgCTHi5;N[0F8kE9DHT@0K0
+!s100 HbFzfa3^LFYN4Ph0ccY3R3
+R6
+31
+R7
+!i10b 1
+R8
+R33
+R34
+!i113 1
+R11
+R12
+Escan_reg
+Z35 w1482228410
+R30
+R2
+R3
+R0
+Z36 8/home/navnit1224/EEsem4/214/StringRecognizer/scan_reg.vhdl
+Z37 F/home/navnit1224/EEsem4/214/StringRecognizer/scan_reg.vhdl
+l0
+L10
+V3Wi708m]9[VLE]>:WhLJG1
+!s100 fV;z;aQWmoR7bL7c8Oba<0
+R6
+31
+R7
+!i10b 1
+R8
+Z38 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/scan_reg.vhdl|
+Z39 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/scan_reg.vhdl|
+!i113 1
+R11
+R12
+Abehave
+R30
+R2
+R3
+DEx4 work 8 scan_reg 0 22 3Wi708m]9[VLE]>:WhLJG1
+l29
+L26
+VToWlIoB5V8MT=K7Sd8n813
+!s100 gGe5fUn90TYSDna;5?hMX2
+R6
+31
+R7
+!i10b 1
+R8
+R38
+R39
+!i113 1
+R11
+R12
+Estringrec
+Z40 w1520519763
+R2
+R3
+R0
+Z41 8/home/navnit1224/EEsem4/214/StringRecognizer/stringrec.vhd
+Z42 F/home/navnit1224/EEsem4/214/StringRecognizer/stringrec.vhd
+l0
+L8
+VJY]?Ddf`QmkGLObZ?TKeL3
+!s100 `HUW;V60LoXHM@^kCGC^b2
+R6
+31
+R7
+!i10b 1
+R8
+Z43 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/stringrec.vhd|
+Z44 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/stringrec.vhd|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 9 stringrec 0 22 JY]?Ddf`QmkGLObZ?TKeL3
+l31
+L12
+VLdKCzD=CMeWRc>3^@96[;1
+!s100 TdAEozQm:7Jna`<o`>zJk2
+R6
+31
+R7
+!i10b 1
+R8
+R43
+R44
+!i113 1
+R11
+R12
+Eterrorist
+Z45 w1520511457
+R2
+R3
+R0
+Z46 8/home/navnit1224/EEsem4/214/StringRecognizer/terrorist.vhd
+Z47 F/home/navnit1224/EEsem4/214/StringRecognizer/terrorist.vhd
+l0
+L8
+Va32Yh]N?bM2VfYEEAWA>h1
+!s100 0]DA=G0SH4kZSaUJBb`:I2
+R6
+31
+R7
+!i10b 1
+R8
+Z48 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/terrorist.vhd|
+Z49 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/terrorist.vhd|
+!i113 1
+R11
+R12
+Aterror_detector
+R2
+R3
+DEx4 work 9 terrorist 0 22 a32Yh]N?bM2VfYEEAWA>h1
+l22
+L12
+V1H3OBen4TWBoR3gk`gRC;1
+!s100 IRk5>fRY3Vn]5V7Na^JGj1
+R6
+31
+R7
+!i10b 1
+R8
+R48
+R49
+!i113 1
+R11
+R12
+Etestbench
+Z50 w1520536253
+R3
+R2
+R0
+Z51 8/home/navnit1224/EEsem4/214/StringRecognizer/ppgun/../Testbench.vhd
+Z52 F/home/navnit1224/EEsem4/214/StringRecognizer/ppgun/../Testbench.vhd
+l0
+L10
+VTZ>kSmNE7mLGk6jA[BaBQ3
+!s100 h`<<f5Y0?55R4a`U0c<TP2
+R6
+31
+R7
+!i10b 1
+R8
+Z53 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/ppgun/../Testbench.vhd|
+Z54 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/ppgun/../Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 TZ>kSmNE7mLGk6jA[BaBQ3
+l43
+L12
+VF1CdW<8gznMQ?SGWmF9Jd2
+!s100 CBBC]gEGo0QTa0?VfVK?z3
+R6
+31
+R7
+!i10b 1
+R8
+R53
+R54
+!i113 1
+R11
+R12
+Etoplevel
+Z55 w1520537161
+R2
+R3
+R0
+Z56 8/home/navnit1224/EEsem4/214/StringRecognizer/TopLevel.vhdl
+Z57 F/home/navnit1224/EEsem4/214/StringRecognizer/TopLevel.vhdl
+l0
+L11
+V`MfX76`F7bA32^B7AA>?j2
+!s100 >NWU<Qc1QXFDoUXY1;CDl0
+R6
+31
+R7
+!i10b 1
+R8
+Z58 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/StringRecognizer/TopLevel.vhdl|
+Z59 !s107 /home/navnit1224/EEsem4/214/StringRecognizer/TopLevel.vhdl|
+!i113 1
+R11
+R12
+Astruct
+R2
+R3
+DEx4 work 8 toplevel 0 22 `MfX76`F7bA32^B7AA>?j2
+l50
+L21
+V?GC?oV2bATlR^QlZ8lkFS0
+!s100 <cnSNYCBXPgm7zGE:o4e;3
+R6
+31
+R7
+!i10b 1
+R8
+R58
+R59
+!i113 1
+R11
+R12

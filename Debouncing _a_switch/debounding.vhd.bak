@@ -1,0 +1,39 @@
+library ieee;
+use ieee.std_logic_1164.all;
+library std;
+use std.standard.all;
+
+entity debounding is
+  port (clk1: in std_logic; Y1: out std_logic);
+end entity;
+
+architecture WhatDoYouCare of debounding is
+	component Div_2 is
+  	port (clk: in std_logic; Y: out std_logic);
+	end component;
+	component D_FF is
+  		port (D, CLK: in std_logic; Q,Q1: out std_logic);
+	end component;
+	signal p,k: std_logic_vector(18 downto 0)  := "0000000000000000000";
+begin 
+	DF_1: Div_2 port map(clk1,p(0),k(0));
+	DF_2: Div_2 port map(p(0),p(1),k(1));
+	DF_3: Div_2 port map(p(1),p(2),k(2));
+	DF_4: Div_2 port map(p(2),p(3),k(3));
+	DF_5: Div_2 port map(p(3),p(4),k(4));
+	DF_6: Div_2 port map(p(4),p(5),k(5));
+	DF_7: Div_2 port map(p(5),p(6),k(6));
+	DF_8: Div_2 port map(p(6),p(7),k(7));
+	DF_9: Div_2 port map(p(7),p(8),k(8));
+	DF_10: Div_2 port map(p(8),p(9),k(9));
+	DF_11: Div_2 port map(p(9),p(10),k(10));
+	DF_12: Div_2 port map(p(10),p(11),k(11));
+	DF_13: Div_2 port map(p(11),p(12),k(12));
+	DF_14: Div_2 port map(p(12),p(13),k(13));
+	DF_15: Div_2 port map(p(13),p(14),k(14));
+	DF_16: Div_2 port map(p(14),p(15),k(15));
+	DF_17: Div_2 port map(p(15),p(16),k(16));
+	DF_18: Div_2 port map(p(16),p(17),k(17));	
+	DF_19: Div_2 port map(p(17),p(18),k(18));
+	Y1 <= p(18);	
+end WhatDoYouCare;

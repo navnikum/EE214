@@ -1,0 +1,78 @@
+# ERROR: No extended dataflow license exists
+# do eightbitadder_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/navnit1224/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:55:11 on Feb 19,2018
+# vcom -reportprogress 300 -93 -work work /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity DUT
+# -- Compiling architecture DutWrap of DUT
+# End time: 09:55:11 on Feb 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:55:11 on Feb 19,2018
+# vcom -reportprogress 300 -93 -work work /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling package EE224_Components
+# -- Compiling entity HA
+# -- Compiling architecture Behave of HA
+# -- Compiling entity FA
+# -- Compiling architecture Behave of FA
+# -- Loading package EE224_Components
+# -- Compiling entity eightbitadder
+# -- Compiling architecture behave of eightbitadder
+# End time: 09:55:11 on Feb 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vcom -93 -work work {/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder/../Testbench.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 09:55:11 on Feb 19,2018
+# vcom -reportprogress 300 -93 -work work /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder/../Testbench.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Testbench
+# -- Compiling architecture Behave of Testbench
+# End time: 09:55:11 on Feb 19,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs="+acc"  Testbench
+# vsim -t 1ps -L altera -L lpm -L sgate -L altera_mf -L altera_lnsim -L maxv -L rtl_work -L work -voptargs=""+acc"" Testbench 
+# Start time: 09:55:11 on Feb 19,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.testbench(behave)
+# Loading work.dut(dutwrap)
+# Loading work.ee224_components
+# Loading work.eightbitadder(behave)
+# Loading work.ha(behave)
+# Loading work.fa(behave)
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
+# ** Note: SUCCESS, all tests passed.
+#    Time: 5242880 ns  Iteration: 0  Instance: /testbench
+# 
+# stdin: <EOF>
+# End time: 09:56:00 on Feb 19,2018, Elapsed time: 0:00:49
+# Errors: 0, Warnings: 0

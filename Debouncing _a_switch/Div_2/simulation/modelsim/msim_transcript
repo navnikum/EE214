@@ -1,0 +1,67 @@
+# ERROR: No extended dataflow license exists
+# do div_2_run_msim_rtl_vhdl.do
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Model Technology ModelSim - Intel FPGA Edition vmap 10.5b Lib Mapping Utility 2016.10 Oct  5 2016
+# vmap work rtl_work 
+# Copying /home/navnit1224/intelFPGA_lite/16.1/modelsim_ase/linuxaloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# 
+# vcom -93 -work work {/home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:41:12 on Mar 15,2018
+# vcom -reportprogress 300 -93 -work work /home/navnit1224/EEsem4/214/Debouncing _a_switch/D_FF1.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity D_FF1
+# -- Compiling architecture WhatDoYouCare of D_FF1
+# End time: 17:41:12 on Mar 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vcom -93 -work work {/home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd}
+# Model Technology ModelSim - Intel FPGA Edition vcom 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 17:41:12 on Mar 15,2018
+# vcom -reportprogress 300 -93 -work work /home/navnit1224/EEsem4/214/Debouncing _a_switch/div_2.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity Div_2
+# -- Compiling architecture WhatDoYouCare of Div_2
+# End time: 17:41:12 on Mar 15,2018, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# 
+# stdin: <EOF>
+vsim work.div_2
+# vsim work.div_2 
+# Start time: 17:41:15 on Mar 15,2018
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.div_2(whatdoyoucare)
+# Loading work.d_ff1(whatdoyoucare)
+add wave -position insertpoint sim:/div_2/*
+force -freeze sim:/div_2/clk 1 0ns, 0 {50000 ps} -r 100ns
+force -freeze sim:/div_2/rst 0 0
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 17:42:51 on Mar 15,2018, Elapsed time: 0:01:36
+# Errors: 0, Warnings: 0

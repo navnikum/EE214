@@ -1,0 +1,228 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub/simulation/modelsim
+Edut
+Z1 w1519014449
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+Z5 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+l0
+L10
+VWadSKCdM]?EH_n]]GTLBm3
+!s100 7Uo7FO;97DnT92`LC[l3O1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1519014644
+!i10b 1
+Z8 !s108 1519014644.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 WadSKCdM]?EH_n]]GTLBm3
+l39
+L15
+VfCGQ3]gI@^T<h4[9]7bX;1
+!s100 LojVDbZ?QT8o>izWeXZXP3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pee224_components1
+R2
+R3
+Z13 w1519007500
+R0
+Z14 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd
+Z15 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd
+l0
+L7
+VfSCohm_5FSJoVng2>H=@C2
+!s100 =F1fACbdE?1Qe57UGRJk23
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd|
+!i113 1
+R11
+R12
+Eeightbitsub
+R13
+Z18 DPx4 work 17 ee224_components1 0 22 fSCohm_5FSJoVng2>H=@C2
+R2
+R3
+R0
+R14
+R15
+l0
+L59
+VbJ9NLD]WM><M:6Ka[B9lD0
+!s100 dgghoMjHYQ=E5UcA7Ph;>1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Abehave
+R18
+R2
+R3
+DEx4 work 11 eightbitsub 0 22 bJ9NLD]WM><M:6Ka[B9lD0
+l65
+L63
+VWRnOBUZC2a8jl71b^L0Ef0
+!s100 `a<b74i<^;_eC3`A6T>O22
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Efd
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L38
+V<Rn[WPmn@0kaX?Mf>:c7_3
+!s100 gF`9M33<AJ3bj`P<:85g32
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 2 fd 0 22 <Rn[WPmn@0kaX?Mf>:c7_3
+l44
+L42
+VTBVmDlPdnGc@]GSEZOhk52
+!s100 680i_RNd<mh0c_7dTIQmL1
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Ehd
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L24
+Vo9PW_DCGN[Rk4dg<mK;j81
+!s100 ;[5PWR6PnQ^5c_EdX8c;g0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 2 hd 0 22 o9PW_DCGN[Rk4dg<mK;j81
+l29
+L28
+VBeAze^a[aR78TBomEdS9V0
+!s100 iO7[d7aAR7YVaVCkS9jeG0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z19 w1519014438
+R3
+R2
+R0
+Z20 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub/../Testbench.vhd
+Z21 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub/../Testbench.vhd
+l0
+L10
+VTZ>kSmNE7mLGk6jA[BaBQ3
+!s100 h`<<f5Y0?55R4a`U0c<TP2
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub/../Testbench.vhd|
+Z23 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub/../Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 TZ>kSmNE7mLGk6jA[BaBQ3
+l43
+L12
+VQ8YLaV4KZUdbFAmBS2fdb2
+!s100 A:=YhXAidU^Aj5i^:3aNK2
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12

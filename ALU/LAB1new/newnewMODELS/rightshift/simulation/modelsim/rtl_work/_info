@@ -1,0 +1,228 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift/simulation/modelsim
+Edut
+Z1 w1519014864
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+Z5 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+l0
+L10
+VWadSKCdM]?EH_n]]GTLBm3
+!s100 7Uo7FO;97DnT92`LC[l3O1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1519015020
+!i10b 1
+Z8 !s108 1519015020.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 WadSKCdM]?EH_n]]GTLBm3
+l39
+L15
+VBiK@bF:FYVeo<DcF:_e^C2
+!s100 QDI]b6>j^i]]m^_2PmMmR3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pee224_components2
+R2
+R3
+Z13 w1519014882
+R0
+Z14 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd
+Z15 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd
+l0
+L7
+VT_^GWQ65R?][9GM[^Rm4a2
+!s100 <3U_1;NINMHk50L[4cG@D2
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd|
+!i113 1
+R11
+R12
+Emux21
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L22
+Vl=51_i3Z9[^cI93hKF5I]0
+!s100 UNQ?gLFl_Q<TGlKm97kEX0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 5 mux21 0 22 l=51_i3Z9[^cI93hKF5I]0
+l27
+L26
+V<_<GhA^hdK:gGbm3:JYUH3
+!s100 b3mjIYBLWXFzc:Fc[11gB3
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Emux4
+R13
+R2
+R3
+R0
+R14
+R15
+l0
+L32
+V_=[2b6UGmAmdm5=L^]5Gj3
+!s100 ?aFC3;;<:9R1`:6OakoZZ2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 4 mux4 0 22 _=[2b6UGmAmdm5=L^]5Gj3
+l37
+L36
+VnXbmk<moG0O_iPS;cK2ag3
+!s100 Zhe9TV5K2TJ_CZ?0@<gO[2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Erightshift
+R13
+Z18 DPx4 work 17 ee224_components2 0 22 T_^GWQ65R?][9GM[^Rm4a2
+R2
+R3
+R0
+R14
+R15
+l0
+L55
+Vh;F6[YC::SbjGLaG6`ZN`2
+!s100 OU3fW;2SoSAdWGAXXf9P22
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Abehave
+R18
+R2
+R3
+DEx4 work 10 rightshift 0 22 h;F6[YC::SbjGLaG6`ZN`2
+l62
+L59
+V1MKg9n;2DB8Da[A?LbKoc0
+!s100 :13h9T_`[jjNf=@;?meFg2
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etestbench
+Z19 w1519014869
+R3
+R2
+R0
+Z20 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift/../Testbench.vhd
+Z21 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift/../Testbench.vhd
+l0
+L10
+VTZ>kSmNE7mLGk6jA[BaBQ3
+!s100 h`<<f5Y0?55R4a`U0c<TP2
+R6
+31
+R7
+!i10b 1
+R8
+Z22 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift/../Testbench.vhd|
+Z23 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift/../Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 TZ>kSmNE7mLGk6jA[BaBQ3
+l43
+L12
+VB@5aF>lng?l0nbY=>X@B33
+!s100 EXnBjM<N:KOkIEn>?MzfI2
+R6
+31
+R7
+!i10b 1
+R8
+R22
+R23
+!i113 1
+R11
+R12

@@ -1,0 +1,331 @@
+|DUT
+input_vector[0] => rightshift:c.y[0]
+input_vector[1] => rightshift:c.y[1]
+input_vector[2] => rightshift:c.y[2]
+input_vector[3] => rightshift:c.y[3]
+input_vector[4] => rightshift:c.y[4]
+input_vector[5] => rightshift:c.y[5]
+input_vector[6] => rightshift:c.y[6]
+input_vector[7] => rightshift:c.y[7]
+input_vector[8] => rightshift:c.x[0]
+input_vector[9] => rightshift:c.x[1]
+input_vector[10] => rightshift:c.x[2]
+input_vector[11] => rightshift:c.x[3]
+input_vector[12] => rightshift:c.x[4]
+input_vector[13] => rightshift:c.x[5]
+input_vector[14] => rightshift:c.x[6]
+input_vector[15] => rightshift:c.x[7]
+output_vector[0] <= rightshift:c.z[0]
+output_vector[1] <= rightshift:c.z[1]
+output_vector[2] <= rightshift:c.z[2]
+output_vector[3] <= rightshift:c.z[3]
+output_vector[4] <= rightshift:c.z[4]
+output_vector[5] <= rightshift:c.z[5]
+output_vector[6] <= rightshift:c.z[6]
+output_vector[7] <= rightshift:c.z[7]
+
+
+|DUT|rightshift:c
+x[0] => MUX21:MUX2_3a.a
+x[1] => MUX21:MUX2_3b.a
+x[2] => MUX21:MUX2_3c.a
+x[3] => MUX21:MUX2_3d.a
+x[4] => MUX21:MUX2_3e.a
+x[5] => MUX21:MUX2_3f.a
+x[6] => MUX21:MUX2_3g.a
+x[7] => MUX21:MUX2_3h.a
+y[0] => MUX21:MUX2_0a.n
+y[0] => MUX21:MUX2_0b.n
+y[0] => MUX21:MUX2_0c.n
+y[0] => MUX21:MUX2_0d.n
+y[0] => MUX21:MUX2_0e.n
+y[0] => MUX21:MUX2_0f.n
+y[0] => MUX21:MUX2_0g.n
+y[0] => MUX21:MUX2_0h.n
+y[1] => MUX21:MUX2_1a.n
+y[1] => MUX21:MUX2_1b.n
+y[1] => MUX21:MUX2_1c.n
+y[1] => MUX21:MUX2_1d.n
+y[1] => MUX21:MUX2_1e.n
+y[1] => MUX21:MUX2_1f.n
+y[1] => MUX21:MUX2_1g.n
+y[1] => MUX21:MUX2_1h.n
+y[2] => MUX21:MUX2_2a.n
+y[2] => MUX21:MUX2_2b.n
+y[2] => MUX21:MUX2_2c.n
+y[2] => MUX21:MUX2_2d.n
+y[2] => MUX21:MUX2_2e.n
+y[2] => MUX21:MUX2_2f.n
+y[2] => MUX21:MUX2_2g.n
+y[2] => MUX21:MUX2_2h.n
+y[3] => p.IN1
+y[4] => p.IN1
+y[5] => p.IN1
+y[6] => p.IN0
+y[7] => p.IN1
+z[0] <= MUX21:MUX2_0a.o
+z[1] <= MUX21:MUX2_0b.o
+z[2] <= MUX21:MUX2_0c.o
+z[3] <= MUX21:MUX2_0d.o
+z[4] <= MUX21:MUX2_0e.o
+z[5] <= MUX21:MUX2_0f.o
+z[6] <= MUX21:MUX2_0g.o
+z[7] <= MUX21:MUX2_0h.o
+
+
+|DUT|rightshift:c|MUX21:MUX2_3a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_3h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_2h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_1h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0a
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0b
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0c
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0d
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0e
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0f
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0g
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|rightshift:c|MUX21:MUX2_0h
+a => o.IN0
+b => o.IN0
+n => o.IN1
+n => o.IN1
+o <= o.DB_MAX_OUTPUT_PORT_TYPE
+
+

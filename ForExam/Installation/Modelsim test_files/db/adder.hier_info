@@ -1,0 +1,17 @@
+|HA
+A => carry.IN0
+A => xor_2:A1.A
+B => carry.IN1
+B => xor_2:A1.B
+sum <= xor_2:A1.C
+carry <= carry.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|HA|xor_2:A1
+A => notA.IN0
+A => AnotB.IN0
+B => notB.IN0
+B => notAB.IN0
+C <= C.DB_MAX_OUTPUT_PORT_TYPE
+
+

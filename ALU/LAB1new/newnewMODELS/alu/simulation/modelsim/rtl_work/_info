@@ -1,0 +1,648 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu/simulation/modelsim
+Ealu
+Z1 w1519015341
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd
+Z5 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd
+l0
+L9
+VTiG;T7]<0Uk_9O4e36^k42
+!s100 E5AnUc2J:8;<<_]d_gm;R1
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1519046298
+!i10b 1
+Z8 !s108 1519046298.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehave
+R2
+R3
+DEx4 work 3 alu 0 22 TiG;T7]<0Uk_9O4e36^k42
+l34
+L13
+VQZ29[_m0CbI:`Nl2c1J4B3
+!s100 ^mk^f?RRaQ@>@3Q_[i]hW2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edut
+Z13 w1519044111
+R2
+R3
+R0
+Z14 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+Z15 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd
+l0
+L10
+VMfjU><;]N71GeaiBmWVkB0
+!s100 4dbKmK`D=8]6`TfYdPb@Q0
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 MfjU><;]N71GeaiBmWVkB0
+l39
+L15
+VYC8IGaZ5Tnhzl4oOBDO]P1
+!s100 4dRH0Z:AKRNd^o@PWiG`83
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Pee224_components
+R2
+R3
+Z18 w1518998204
+R0
+Z19 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd
+Z20 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd
+l0
+L6
+VURni<ThSYAP0Y_iGh@f1E1
+!s100 9Bdl:Xjl8IgE4gfLkXJ3g1
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd|
+Z22 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitadder.vhd|
+!i113 1
+R11
+R12
+Pee224_components1
+R2
+R3
+Z23 w1519007500
+R0
+Z24 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd
+Z25 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd
+l0
+L7
+VfSCohm_5FSJoVng2>H=@C2
+!s100 =F1fACbdE?1Qe57UGRJk23
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd|
+Z27 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/eightbitsub.vhd|
+!i113 1
+R11
+R12
+Pee224_components2
+R2
+R3
+Z28 w1519014882
+R0
+Z29 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd
+Z30 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd
+l0
+L7
+VT_^GWQ65R?][9GM[^Rm4a2
+!s100 <3U_1;NINMHk50L[4cG@D2
+R6
+31
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd|
+Z32 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/rightshift.vhd|
+!i113 1
+R11
+R12
+Pee224_components3
+R2
+R3
+Z33 w1519015135
+R0
+Z34 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd
+Z35 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd
+l0
+L7
+VWMC?Xd5QcjQ>2WeCI4FLb0
+!s100 cSW^>2hz;Ba[3=@hWA:E23
+R6
+31
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd|
+Z37 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/leftshift.vhd|
+!i113 1
+R11
+R12
+Eeightbitadder
+R18
+Z38 DPx4 work 16 ee224_components 0 22 URni<ThSYAP0Y_iGh@f1E1
+R2
+R3
+R0
+R19
+R20
+l0
+L60
+V^2WLzXk[;kbBXUl@nY8Ej1
+!s100 RzemWD[X8=o8g_K88=9AR3
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Abehave
+R38
+R2
+R3
+DEx4 work 13 eightbitadder 0 22 ^2WLzXk[;kbBXUl@nY8Ej1
+l66
+L64
+Vg>3o=@;VRT^hFJm`X_52l1
+!s100 QWBFckL?R6:PJVIY;GZO90
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Eeightbitsub
+R23
+Z39 DPx4 work 17 ee224_components1 0 22 fSCohm_5FSJoVng2>H=@C2
+R2
+R3
+R0
+R24
+R25
+l0
+L59
+VbJ9NLD]WM><M:6Ka[B9lD0
+!s100 dgghoMjHYQ=E5UcA7Ph;>1
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Abehave
+R39
+R2
+R3
+DEx4 work 11 eightbitsub 0 22 bJ9NLD]WM><M:6Ka[B9lD0
+l65
+L63
+VWRnOBUZC2a8jl71b^L0Ef0
+!s100 `a<b74i<^;_eC3`A6T>O22
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Efa
+R18
+R2
+R3
+R0
+R19
+R20
+l0
+L38
+VhkKOeFP^RlJald7Bn@Q@R3
+!s100 VEE;I99Y=4`[knR5=T?1n0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 2 fa 0 22 hkKOeFP^RlJald7Bn@Q@R3
+l44
+L42
+V[6^k^_<2K[dE02j[Em6EX2
+!s100 m`cob]AmUgXlC^LYG8YXM0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Efd
+R23
+R2
+R3
+R0
+R24
+R25
+l0
+L38
+V<Rn[WPmn@0kaX?Mf>:c7_3
+!s100 gF`9M33<AJ3bj`P<:85g32
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 2 fd 0 22 <Rn[WPmn@0kaX?Mf>:c7_3
+l44
+L42
+VTBVmDlPdnGc@]GSEZOhk52
+!s100 680i_RNd<mh0c_7dTIQmL1
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Eha
+R18
+R2
+R3
+R0
+R19
+R20
+l0
+L24
+V25e@<if<YggIbC437SO@=2
+!s100 :k9?0Kz_a40T4n8A5z7FC0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 2 ha 0 22 25e@<if<YggIbC437SO@=2
+l29
+L28
+VlzNBa6Jb8EANYD`PXQ:Ln0
+!s100 Z:Q;:fRCE@Ldg_@4f?oME0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Ehd
+R23
+R2
+R3
+R0
+R24
+R25
+l0
+L24
+Vo9PW_DCGN[Rk4dg<mK;j81
+!s100 ;[5PWR6PnQ^5c_EdX8c;g0
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 2 hd 0 22 o9PW_DCGN[Rk4dg<mK;j81
+l29
+L28
+VBeAze^a[aR78TBomEdS9V0
+!s100 iO7[d7aAR7YVaVCkS9jeG0
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Eleftshift
+R33
+Z40 DPx4 work 17 ee224_components3 0 22 WMC?Xd5QcjQ>2WeCI4FLb0
+R2
+R3
+R0
+R34
+R35
+l0
+L47
+V5Qalc7McWmm64YXn@A1>D3
+!s100 CdUzI8>OdKMl^2RgRSa>d0
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Abehave
+R40
+R2
+R3
+DEx4 work 9 leftshift 0 22 5Qalc7McWmm64YXn@A1>D3
+l55
+L52
+Ve6_UMgkK]>44UOZ3i<kgU3
+!s100 KJKQ`UQ6?Yh]aF>ZCh@KT3
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Emux2
+R33
+R2
+R3
+R0
+R34
+R35
+l0
+L22
+V;`oh<_FDG3`[OKo[jn<W`2
+!s100 zDU?H8AGfeB8BjXJzZLAQ1
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 4 mux2 0 22 ;`oh<_FDG3`[OKo[jn<W`2
+l27
+L26
+Vm0MKJ<iTh1CF9QD`jdTXP3
+!s100 :Jmk?efb[Qe[F674m^Eg>2
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Emux21
+R28
+R2
+R3
+R0
+R29
+R30
+l0
+L22
+Vl=51_i3Z9[^cI93hKF5I]0
+!s100 UNQ?gLFl_Q<TGlKm97kEX0
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 5 mux21 0 22 l=51_i3Z9[^cI93hKF5I]0
+l27
+L26
+V<_<GhA^hdK:gGbm3:JYUH3
+!s100 b3mjIYBLWXFzc:Fc[11gB3
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Emux4
+R28
+R2
+R3
+R0
+R29
+R30
+l0
+L32
+V_=[2b6UGmAmdm5=L^]5Gj3
+!s100 ?aFC3;;<:9R1`:6OakoZZ2
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 4 mux4 0 22 _=[2b6UGmAmdm5=L^]5Gj3
+l37
+L36
+VnXbmk<moG0O_iPS;cK2ag3
+!s100 Zhe9TV5K2TJ_CZ?0@<gO[2
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Erightshift
+R28
+Z41 DPx4 work 17 ee224_components2 0 22 T_^GWQ65R?][9GM[^Rm4a2
+R2
+R3
+R0
+R29
+R30
+l0
+L55
+Vh;F6[YC::SbjGLaG6`ZN`2
+!s100 OU3fW;2SoSAdWGAXXf9P22
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Abehave
+R41
+R2
+R3
+DEx4 work 10 rightshift 0 22 h;F6[YC::SbjGLaG6`ZN`2
+l62
+L59
+V1MKg9n;2DB8Da[A?LbKoc0
+!s100 :13h9T_`[jjNf=@;?meFg2
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Etestbench
+Z42 w1519015310
+R3
+R2
+R0
+Z43 8/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu/../Testbench.vhd
+Z44 F/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu/../Testbench.vhd
+l0
+L10
+VTZ>kSmNE7mLGk6jA[BaBQ3
+!s100 h`<<f5Y0?55R4a`U0c<TP2
+R6
+31
+R7
+!i10b 1
+R8
+Z45 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu/../Testbench.vhd|
+Z46 !s107 /home/navnit1224/EEsem4/214/LAB1new/newnewMODELS/alu/../Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 TZ>kSmNE7mLGk6jA[BaBQ3
+l43
+L12
+V4c[WRZc8J^U;P@I6LJ[Bm3
+!s100 6<?8e>d<ez5GZ3:2[YjfF2
+R6
+31
+R7
+!i10b 1
+R8
+R45
+R46
+!i113 1
+R11
+R12

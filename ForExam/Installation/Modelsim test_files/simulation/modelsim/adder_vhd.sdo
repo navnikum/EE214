@@ -1,0 +1,90 @@
+// Copyright (C) 1991-2013 Altera Corporation
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, Altera MegaCore Function License 
+// Agreement, or other applicable license agreement, including, 
+// without limitation, that your use is for the sole purpose of 
+// programming logic devices manufactured by Altera and sold by 
+// Altera or its authorized distributors.  Please refer to the 
+// applicable agreement for further details.
+
+
+// 
+// Device: Altera EPM3064ALC44-10 Package PLCC44
+// 
+
+// 
+// This SDF file should be used for ModelSim-Altera (VHDL) only
+// 
+
+(DELAYFILE
+  (SDFVERSION "2.1")
+  (DESIGN "HA")
+  (DATE "12/14/2017 00:11:42")
+  (VENDOR "Altera")
+  (PROGRAM "Quartus II 64-Bit")
+  (VERSION "Version 13.0.0 Build 156 04/24/2013 SJ Web Edition")
+  (DIVIDER .)
+  (TIMESCALE 1 ps)
+
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\A\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1400:1400:1400) (1400:1400:1400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\B\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH padio dataout (1400:1400:1400) (1400:1400:1400))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\A1\|C\~1\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pxor[0] combout (4500:4500:4500) (4500:4500:4500))
+        (IOPATH pterm2[0] combout (4500:4500:4500) (4500:4500:4500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_mcell")
+    (INSTANCE \\carry\~2\\.pcom)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH pterm1[0] combout (4500:4500:4500) (4500:4500:4500))
+        (IOPATH pterm1[1] combout (4500:4500:4500) (4500:4500:4500))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\sum\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+  (CELL
+    (CELLTYPE "max_asynch_io")
+    (INSTANCE \\carry\~I\\.asynch_inst)
+    (DELAY
+      (ABSOLUTE
+        (IOPATH datain padio (1800:1800:1800) (1800:1800:1800))
+      )
+    )
+  )
+)

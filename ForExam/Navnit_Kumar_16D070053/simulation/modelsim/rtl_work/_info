@@ -1,0 +1,283 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/Desktop/exam/simulation/modelsim
+Eand_1
+Z1 w1524304105
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/Desktop/exam/and.vhd
+Z5 F/home/navnit1224/Desktop/exam/and.vhd
+l0
+L6
+VLiFc`Xc[UhfJM[d?O@LW;2
+!s100 <coS@LPT806U?Azb:;`Dm2
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1524310718
+!i10b 1
+Z8 !s108 1524310718.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/and.vhd|
+Z10 !s107 /home/navnit1224/Desktop/exam/and.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehave
+R2
+R3
+DEx4 work 5 and_1 0 22 LiFc`Xc[UhfJM[d?O@LW;2
+l11
+L10
+VMI`Q_Il13WQVYU63_im>Q1
+!s100 49ig;ddk9MEg6hVD<X9jV1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Edff_2
+Z13 w1524303746
+R2
+R3
+R0
+Z14 8/home/navnit1224/Desktop/exam/dff_2.vhd
+Z15 F/home/navnit1224/Desktop/exam/dff_2.vhd
+l0
+L4
+VBO39meST40nBS7U;;GVS62
+!s100 LjR2`[V097l0gA_R?>7B03
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/dff_2.vhd|
+Z17 !s107 /home/navnit1224/Desktop/exam/dff_2.vhd|
+!i113 1
+R11
+R12
+Awhatdoyoucare
+R2
+R3
+DEx4 work 5 dff_2 0 22 BO39meST40nBS7U;;GVS62
+l9
+L8
+VHX9U759FOXcSOi5NI1bai0
+!s100 [YOKe8N`67;zT@3`FLaZQ0
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Edut
+Z18 w1524306686
+R2
+R3
+R0
+Z19 8/home/navnit1224/Desktop/exam/DUT.vhd
+Z20 F/home/navnit1224/Desktop/exam/DUT.vhd
+l0
+L10
+Vi<=`Y=TEA8h@`2OHA6Lk>2
+!s100 ^hXVO4]bGUhmMQ;H?Ile40
+R6
+31
+R7
+!i10b 1
+R8
+Z21 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/DUT.vhd|
+Z22 !s107 /home/navnit1224/Desktop/exam/DUT.vhd|
+!i113 1
+R11
+R12
+Adutwrap
+R2
+R3
+DEx4 work 3 dut 0 22 i<=`Y=TEA8h@`2OHA6Lk>2
+l21
+L15
+Vc`OCN:SzEMiS4[T6a;aQb3
+!s100 _zC^@bYl<0FVon9]KVmWD0
+R6
+31
+R7
+!i10b 1
+R8
+R21
+R22
+!i113 1
+R11
+R12
+Efsm
+Z23 w1524304924
+R2
+R3
+R0
+Z24 8/home/navnit1224/Desktop/exam/FSM.vhd
+Z25 F/home/navnit1224/Desktop/exam/FSM.vhd
+l0
+L7
+VccZJC21IAOc:7?Gh7FKB<0
+!s100 DPM@a^zj0EbbF]CFzc@IJ1
+R6
+31
+R7
+!i10b 1
+R8
+Z26 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/FSM.vhd|
+Z27 !s107 /home/navnit1224/Desktop/exam/FSM.vhd|
+!i113 1
+R11
+R12
+Amyarch
+R2
+R3
+DEx4 work 3 fsm 0 22 ccZJC21IAOc:7?Gh7FKB<0
+l26
+L11
+VgeLHg9XV?6JPZh27X`f^63
+!s100 iQ=hN47Uaj<Q58l?9_E8h3
+R6
+31
+R7
+!i10b 1
+R8
+R26
+R27
+!i113 1
+R11
+R12
+Enot_1
+Z28 w1524304075
+R2
+R3
+R0
+Z29 8/home/navnit1224/Desktop/exam/not.vhd
+Z30 F/home/navnit1224/Desktop/exam/not.vhd
+l0
+L6
+VQ2L3`azWI`HP<V3XFRA5j3
+!s100 HCXUPV762nOX35K:TN:@92
+R6
+31
+R7
+!i10b 1
+R8
+Z31 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/not.vhd|
+Z32 !s107 /home/navnit1224/Desktop/exam/not.vhd|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 5 not_1 0 22 Q2L3`azWI`HP<V3XFRA5j3
+l11
+L10
+VfOI?AL[WMdj;gUG5?63Xf2
+!s100 ]Y2oNmV@A7U_FHHB^]jl41
+R6
+31
+R7
+!i10b 1
+R8
+R31
+R32
+!i113 1
+R11
+R12
+Eor_1
+Z33 w1524304074
+R2
+R3
+R0
+Z34 8/home/navnit1224/Desktop/exam/or.vhd
+Z35 F/home/navnit1224/Desktop/exam/or.vhd
+l0
+L6
+VIVikW:P:oL[^FSll0=Zkj2
+!s100 Q2OB44D6EO^8McD>4SZbz0
+R6
+31
+R7
+!i10b 1
+R8
+Z36 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/or.vhd|
+Z37 !s107 /home/navnit1224/Desktop/exam/or.vhd|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 4 or_1 0 22 IVikW:P:oL[^FSll0=Zkj2
+l11
+L10
+V]V61=lcYXHMJO@VBKiEAV2
+!s100 >?CeZEi?>Eoo<0`A>2@Bl2
+R6
+31
+R7
+!i10b 1
+R8
+R36
+R37
+!i113 1
+R11
+R12
+Etestbench
+Z38 w1524310446
+R3
+R2
+R0
+Z39 8/home/navnit1224/Desktop/exam/../Testbench.vhd
+Z40 F/home/navnit1224/Desktop/exam/../Testbench.vhd
+l0
+L10
+VTZ>kSmNE7mLGk6jA[BaBQ3
+!s100 h`<<f5Y0?55R4a`U0c<TP2
+R6
+31
+R7
+!i10b 1
+R8
+Z41 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/Desktop/exam/../Testbench.vhd|
+Z42 !s107 /home/navnit1224/Desktop/exam/../Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R3
+R2
+DEx4 work 9 testbench 0 22 TZ>kSmNE7mLGk6jA[BaBQ3
+l43
+L12
+VFJFeCZ?Gmm<d=bEL@NTOQ0
+!s100 eYVno]QJ[bX`1QEVkalod0
+R6
+31
+R7
+!i10b 1
+R8
+R41
+R42
+!i113 1
+R11
+R12

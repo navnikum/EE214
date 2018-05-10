@@ -1,0 +1,140 @@
+|DUT
+input_vector[0] => eightbitsub:d.y[0]
+input_vector[1] => eightbitsub:d.y[1]
+input_vector[2] => eightbitsub:d.y[2]
+input_vector[3] => eightbitsub:d.y[3]
+input_vector[4] => eightbitsub:d.y[4]
+input_vector[5] => eightbitsub:d.y[5]
+input_vector[6] => eightbitsub:d.y[6]
+input_vector[7] => eightbitsub:d.y[7]
+input_vector[8] => eightbitsub:d.x[0]
+input_vector[9] => eightbitsub:d.x[1]
+input_vector[10] => eightbitsub:d.x[2]
+input_vector[11] => eightbitsub:d.x[3]
+input_vector[12] => eightbitsub:d.x[4]
+input_vector[13] => eightbitsub:d.x[5]
+input_vector[14] => eightbitsub:d.x[6]
+input_vector[15] => eightbitsub:d.x[7]
+output_vector[0] <= eightbitsub:d.z[0]
+output_vector[1] <= eightbitsub:d.z[1]
+output_vector[2] <= eightbitsub:d.z[2]
+output_vector[3] <= eightbitsub:d.z[3]
+output_vector[4] <= eightbitsub:d.z[4]
+output_vector[5] <= eightbitsub:d.z[5]
+output_vector[6] <= eightbitsub:d.z[6]
+output_vector[7] <= eightbitsub:d.z[7]
+
+
+|DUT|eightbitsub:d
+x[0] => HD:HD_1.m
+x[1] => FD:FD_1.m
+x[2] => FD:FD_2.m
+x[3] => FD:FD_3.m
+x[4] => FD:FD_4.m
+x[5] => FD:FD_5.m
+x[6] => FD:FD_6.m
+x[7] => FD:FD_7.m
+y[0] => HD:HD_1.n
+y[1] => FD:FD_1.n
+y[2] => FD:FD_2.n
+y[3] => FD:FD_3.n
+y[4] => FD:FD_4.n
+y[5] => FD:FD_5.n
+y[6] => FD:FD_6.n
+y[7] => FD:FD_7.n
+z[0] <= HD:HD_1.d
+z[1] <= FD:FD_1.d
+z[2] <= FD:FD_2.d
+z[3] <= FD:FD_3.d
+z[4] <= FD:FD_4.d
+z[5] <= FD:FD_5.d
+z[6] <= FD:FD_6.d
+z[7] <= FD:FD_7.d
+
+
+|DUT|eightbitsub:d|HD:HD_1
+m => d.IN0
+m => b.IN0
+n => d.IN1
+n => b.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_1
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_2
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_3
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_4
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_5
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_6
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|DUT|eightbitsub:d|FD:FD_7
+m => w.IN0
+m => bout.IN0
+n => w.IN1
+n => bout.IN1
+bin => d.IN1
+bin => bout.IN1
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+bout <= bout.DB_MAX_OUTPUT_PORT_TYPE
+
+

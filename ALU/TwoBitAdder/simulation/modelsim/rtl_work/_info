@@ -1,0 +1,306 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder/simulation/modelsim
+Eand_2
+Z1 w1516782422
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+Z4 8/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder.vhd
+Z5 F/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder.vhd
+l0
+L38
+V>jeL3XNUzLd4Z:IXeAV8H0
+!s100 OHhE?GTCV^Ak2S@QY<2cl0
+Z6 OV;C;10.5b;63
+31
+Z7 !s110 1518687993
+!i10b 1
+Z8 !s108 1518687993.000000
+Z9 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder.vhd|
+Z10 !s107 /home/navnit1224/EEsem4/214/vhdl/TwoBitAdder.vhd|
+!i113 1
+Z11 o-93 -work work
+Z12 tExplicit 1 CvgOpt 0
+Abehave
+R2
+R3
+DEx4 work 5 and_2 0 22 >jeL3XNUzLd4Z:IXeAV8H0
+l43
+L42
+VVnTo_Yo1[AAUXj97=P_oE0
+!s100 VOlLhQ<cM6_ZV1>Alm:Ed0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Pee224_components
+R2
+R3
+R1
+R0
+R4
+R5
+l0
+L7
+V]ZNX?7:4G>SE?oLaRE[;42
+!s100 f;;]jMk6kHEMFYhH:_g321
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Einverter
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L27
+V7<GK<=:gaiN]d8Vb4L:2l2
+!s100 FbATZPTnkE2=kXf_TXiGD1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 8 inverter 0 22 7<GK<=:gaiN]d8Vb4L:2l2
+l32
+L31
+V>3gMe<:8Q<DS9NmZI`Q_k1
+!s100 ;XJhV`dY1<N2CLV[no0QT2
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Enand_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L60
+V@1`^[Lj?aAXfW5BX0_B6B1
+!s100 IDI8mBb;9HhP5l[_gde>k3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 6 nand_2 0 22 @1`^[Lj?aAXfW5BX0_B6B1
+l65
+L64
+VPDDDPC04DcR:cXJUIjDWG3
+!s100 81iH0TW8aSXE8OEAiMlaP1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Eor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L49
+VfGgF4WZ4k0<>oU08gmGBH1
+!s100 Ifl^;Nl8nb4]@nn4jU:RZ0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 4 or_2 0 22 fGgF4WZ4k0<>oU08gmGBH1
+l54
+L53
+VW0j`L1lemjRDYHnHX]MD51
+!s100 Ng7o>cSW^mbzE1SVJG;Po1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Etestbench
+Z13 w1516868902
+R2
+R3
+R0
+Z14 8/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder/../Testbench.vhd
+Z15 F/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder/../Testbench.vhd
+l0
+L6
+V<3ERCo^eOK?AWOgQ^G7La3
+!s100 :mzn1mF?<D@b`?cIjjn7=1
+R6
+31
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-93|-work|work|/home/navnit1224/EEsem4/214/vhdl/TwoBitAdder/../Testbench.vhd|
+Z17 !s107 /home/navnit1224/EEsem4/214/vhdl/TwoBitAdder/../Testbench.vhd|
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 9 testbench 0 22 <3ERCo^eOK?AWOgQ^G7La3
+l35
+L8
+VaZOeP>ch81e2W:AK@E=7B3
+!s100 T:Vnn8fHElKnR:RWFUcF13
+R6
+31
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12
+Etwobitadder
+R1
+Z18 DPx4 work 16 ee224_components 0 22 ]ZNX?7:4G>SE?oLaRE[;42
+R2
+R3
+R0
+R4
+R5
+l0
+L89
+VBTAJ3>Y=f;O`c???c@@iL2
+!s100 aThc4U_BU6B9gaE85eG]40
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Astruct
+R18
+R2
+R3
+DEx4 work 11 twobitadder 0 22 BTAJ3>Y=f;O`c???c@@iL2
+l95
+L93
+VQBm4K^gHYPHC`8:@n]1d^0
+!s100 TXomZC;NCH2QHSeAZW>Md1
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Exor_2
+R1
+R2
+R3
+R0
+R4
+R5
+l0
+L71
+V1JA=[@_GOX0BoiNV>@T[;3
+!s100 aYbUfMa9bA`Znl`LBOT]K3
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Abehave
+R2
+R3
+DEx4 work 5 xor_2 0 22 1JA=[@_GOX0BoiNV>@T[;3
+l76
+L75
+VS`hkM;XDLS0ALo>KdN=0H2
+!s100 B1gX?O:o[O_hLh1ijdXl>0
+R6
+31
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12

@@ -1,0 +1,13 @@
+|div_2
+clk => D_FF1:DF_0.CLK
+rst => ~NO_FANOUT~
+Y << a.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|div_2|D_FF1:DF_0
+D => Q~reg0.DATAIN
+CLK => Q~reg0.CLK
+rst => Q~reg0.PRESET
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
